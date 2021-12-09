@@ -8,3 +8,197 @@
     width: 153px;
     height: 30px;
 }
+.now-banner .container{
+    height: 100%;
+    position: relative;
+   background-image: url(https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Fapkpure.com%2Fvn%2Fcity-night-urban-wallpapers%2Fcom.LiveWallpapersUA.app0507&psig=AOvVaw1fO7IsA0Dz_dCs2EyaS794&ust=1639108753538000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIixqYvq1fQCFQAAAAAdAAAAABAD);
+}
+.container, .container-fulid{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.now-search .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.now-search .form-search .input-group input {
+    width: 100%;
+    padding-right: 75px;
+    padding-left: 10px;
+    height: 50px;
+    border: 0;
+    border-radius: 6px 10px 10px 6px;
+}
+.wrapper input[type=color], .wrapper input[type=date], .wrapper input[type=datetime-local], .wrapper input[type=datetime], .wrapper input[type=email], .wrapper input[type=month], .wrapper input[type=number], .wrapper input[type=password], .wrapper input[type=search], .wrapper input[type=tel], .wrapper input[type=text], .wrapper input[type=time], .wrapper input[type=url], .wrapper input[type=week], .wrapper select:focus, .wrapper textarea {
+    font-size: 16px;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.category-list-filter{
+    margin-bottom: -15px;
+}
+.category-list-filter .category-item {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+.category-list-filter .category-item {
+    font-size: 16px;
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 7px 21px;
+    border-radius: 6px;
+    border: 1px solid;
+    display: inline-block;
+    transition: all .3s ease;
+}
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+.font18 {
+    font-size: 1.125rem!important;
+}
+.now-search .icon-app-store-big, .now-search .icon-gg-play-big {
+    transform: scale(.75);
+    transform-origin: left;
+    margin-right: -40px;
+}
+.icon-app-store-big {
+    background-position: -422px -387px;
+    width: 219px;
+    height: 68px;
+}
+now-search .icon-gg-play-big {
+    transform: scale(.75);
+    transform-origin: left;
+    margin-right: -40px;
+}
+.icon-gg-play-big {
+    background-position: -367px -466px;
+    width: 219px;
+    height: 68px;
+}
+*,:after, :before {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+body {
+    margin: 0;
+    font-family: Noto Sans,Arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #464646;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+:root {
+    --blue: #0288d1;
+    --blue-dark: #187caa;
+    --red: #cf2127;
+    --white: #fff;
+    --gray: #959595;
+    --gray-dark: #464646;
+    --primary: #0288d1;
+    --secondary: #959595;
+    --success: #6cc942;
+    --info: #0ccaff;
+    --warning: #ffc107;
+    --danger: red;
+    --light: #ebebeb;
+    --dark: #464646;
+    --rebranding-primary: #ee4d2d;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.main-right-home .now-list-restaurant {
+    padding: 13px 40px 10px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+}
+.now-list-restaurant {
+    border-radius: 6px;
+    margin-bottom: 20px;
+    position: relative;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+div {
+    display: block;}
+    body {
+        margin: 0;
+        font-family: Noto Sans,Arial,sans-serif;
+        font-size: .875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #464646;
+        text-align: left;
+        background-color: #f2f2f2;
+    }
+    :root {
+        --blue: #0288d1;
+        --blue-dark: #187caa;
+        --red: #cf2127;
+        --white: #fff;
+        --gray: #959595;
+        --gray-dark: #464646;
+        --primary: #0288d1;
+        --secondary: #959595;
+        --success: #6cc942;
+        --info: #0ccaff;
+        --warning: #ffc107;
+        --danger: red;
+        --light: #ebebeb;
+        --dark: #464646;
+        --rebranding-primary: #ee4d2d;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+        --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    }
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        -ms-overflow-style: scrollbar;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    *, :after, :before {
+        box-sizing: border-box;
+    }
+    *, :after, :before {
+        box-sizing: border-box;
+    }
