@@ -4,9 +4,11 @@
     --text-color: #333;
 }
 *{
-    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-*,:after,:before{box-sizing:border-box}
+
 html{
     font-size: 100%;
     font-family:'Roboto', sans-serif;
@@ -29,17 +31,14 @@ html{
     display: flex;
     flex-wrap: wrap;
 }
-.container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-}
 .btn-secondary{
     color: #252525;
     background-color: #ebeff3;
     padding: 10px 27px 10px 19px;
     border: none;
+}
+.dropdown-item .count{
+    text: right;
 }
 .main-nav {
     padding-left: 48px;
@@ -81,25 +80,19 @@ body {
     text-align: left;
     background-color: #f2f2f2;
 }
-.wrapper {
-    padding-top: 70px;
-}
-.now-banner{
-    height: 100%;
-    position: relative;
-}
-.now-search .title {
+
+.search .title {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 5px;
     color: #fff;
 }
-.now-search .local {
+.search .local {
     font-size: 15px;
     text-transform: capitalize;
     color: #fff;
 }
-.now-search .form-search .input-group input {
+.search .form-search .input-group input {
     width: 100%;
     padding-right: 75px;
     padding-left: 10px;
@@ -122,16 +115,6 @@ main{
     background-color: rgba(255, 255, 255,0.9);
     background-image: url(assets/img/main-banner.jpg);
     background-repeat: no-repeat;
-}
-.slidebar-left{
-    width: 50%;
-    margin-top: 50px;
-    margin-left: 50px;
-    padding: 60px;
-}
-.container-list{
-    height: 100%;
-    position: relative;
 }
 .form-search{
     width: 100%;
@@ -160,28 +143,71 @@ main{
     font-size: 1.125rem!important;
     color: #fff;
 }
-main.slidebar-right{
-    width: 50%;
-    margin-right: 100px;
+.boxfood {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
 }
-.user-get-local {
-    background-color: #fff;
-    margin: 20px;
-    height: 100px;
-    padding: 14px 17px 14px 40px;
-    border-radius: 4px;
+
+.boxfood img{
+    object-fit: cover;
 }
-.now-list-restaurant{
-    border-radius: 6px;
-    margin: 20px;
-    position: relative;
-    background-color: #fff;
+
+.boxfoodjr img{
+    object-fit: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+.shopeefood__body {
+    margin-top: 100px;
+    overflow: hidden;
+    
+}
+
+.body__rightside {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.body__rightside {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.restaurant {
+    width: 186px;
+    height: 200px;
+}
+
+.restaurant__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.restaurant__cover {
+    width: 100%;
+    height: 116px;
+}
+
+.restaurant__cover img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .container-footer{
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    height: 100%;
+    height: 100%
 }
 .container-footer-1{
     background-color: #fff;
@@ -218,24 +244,36 @@ main.slidebar-right{
     vertical-align: center;
     border-style: none;
 }
-.footer-tittle{
-    color: rgba(0,0,0,.54);
-    font-size: 13px;
-    font-weight: 700px;
+.footer-icon{
+    display: inline-block;
+    padding: 0 8px;
 }
-.danh-muc .text-decoration-none .footer-tittle{
-    color: rgba(0,0,0,.54);
-    margin: 0 0 0.125rem;
-    font-size: 13px;
+.bi-facebook{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.bi-instagram{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.footer-img{
+    size: 16px;
+}
+.font-weight-bold{
     font-weight: 700;
+    color: #000;
 }
-.text-decoration-none {
-    font-size: 13px;
-    color: rgba(0,0,0,.54);
+.text-decoration-none{
+    color:  #464646;
+    padding: 0 3px;
+    content: "|";
 }
-.end-footer{
-    padding-top: 32px;
-    padding-bottom: 25px;
-    font-size: 14px;
-    margin: 50px;
+.last-footer{
+    text-align: right;
+    float: right;
+    font-size: 16px;
 }
