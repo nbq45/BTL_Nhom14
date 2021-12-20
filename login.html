@@ -66,14 +66,19 @@
           </nav>
     </header>
     <div class="main-login">
-      <h1 class="title">Sign up</h1>
+      <h4 class="title ">Sign up</h4>
       <div class="login-via">
-        <div class="phone">
-          <a class="nav-link" href="#"><i class="bi bi-phone">Điện thoại</i></a>
-          <a class="nav-link" href="#"><i class="bi bi-facebook"></i>Facebook</i></a>
-          <a class="nav-link" href="#"><i class="bi bi-google"></i>Google</i></a>
+        <div class="item phone">
+          <a style="color: aliceblue;" class="nav-link" href="#"><i class="bi bi-phone">SỐ ĐIỆN THOẠI</i></a>
+        <div class="facebook">
+          <a style="color: aliceblue;" class="nav-link" href="#"><i class="bi bi-facebook"></i>FACEBOOK</i></a>
+        </div>
+        <div class="google">
+          <a style="color: aliceblue;" class="nav-link" href="#"><i class="bi bi-google"></i>GOOGLE</i></a>
+        </div>
         </div>
       </div>
+      <p class="text mt-4 mb-4" id="mess">Hoặc nhập mật khẩu bằng tài khoản của bạn</p>
       <div class="form-login1">
         <div class="input-type">
           <div class="email">
@@ -84,7 +89,7 @@
           </div>
         </div>
       </div>
-      <div class="form-login2 clearfix">
+      <div class="form-login2 clearfix mt-4 mb-4">
         <div class="left-group">
           <input type="checkbox" id="rememberme" checked>
           <label for="rememberme">Lưu thông tin đăng nhập</label>
@@ -93,7 +98,11 @@
           <a href="#">Quên mật khẩu?</a>
         </div>
       </div>
-      <button class="btn btn-block btn-submit">Đăng Nhập</button>
+      <button style="color: aliceblue;" class="btn btn-block btn-submit" id="btnlogin">Đăng Nhập</button>
+      <div class="mess-policy">
+        "Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào. Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với"
+        <a style="color: #0495ba" href="#">Chính sách quy định của Foody</a>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

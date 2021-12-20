@@ -16,12 +16,25 @@
 .main-login{
     text-align: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 30px 30px 30px 30px;
     margin:auto;
 }
 .email{
-    width: 100%;
+    position: relative;
+}
+.phone{
+    margin-bottom: 10px;
+    background-color: #329900;
+}
+.facebook{
+    background-color: #187caa;
+}
+.google{
+    background-color: #ff5252;
+}
+#btnlogin{
+    background-color: #187caa;
 }
 .left-group{
     float: left!important;
@@ -37,4 +50,7 @@
 .btn-block {
     display: block;
     width: 100%;
+}
+.mess-policy{
+    font-size: small;
 }
