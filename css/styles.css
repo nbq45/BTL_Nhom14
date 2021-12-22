@@ -14,10 +14,6 @@ html{
     font-family:'Roboto', sans-serif;
     line-height:1.15;
     box-sizing: border-box;
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color:rgba(0,0,0,0)
 } 
 .grid{
     width: 1200px;
@@ -36,9 +32,6 @@ html{
     background-color: #ebeff3;
     padding: 10px 27px 10px 19px;
     border: none;
-}
-.dropdown-item .count{
-    text: right;
 }
 .main-nav {
     padding-left: 48px;
@@ -87,11 +80,6 @@ body {
     margin-bottom: 5px;
     color: #fff;
 }
-.search .local {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: #fff;
-}
 .search .form-search .input-group input {
     width: 100%;
     padding-right: 75px;
@@ -109,12 +97,8 @@ body {
     background-color: #fff;
     height: 70px;
 }
-main{
-    width: 100%;
-    display: flex;
-    background-color: rgba(255, 255, 255,0.9);
-    background-image: url(assets/img/main-banner.jpg);
-    background-repeat: no-repeat;
+.left{
+    padding: 50px;
 }
 .form-search{
     width: 100%;
@@ -124,6 +108,11 @@ main{
     height: 50px;
     border: 0;
     border-radius: 6px 10px 10px 6px;
+}
+.search .local {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #fff;
 }
 .form-search .btn-primary{
     width: 70px;
@@ -167,7 +156,8 @@ header {
 .shopeefood__body {
     margin-top: 100px;
     overflow: hidden;
-    
+    background-image: url(assets/img/main-banner.jpg);
+    background-repeat: no-repeat;
 }
 
 .body__rightside {
@@ -185,9 +175,16 @@ header {
     width: 186px;
     height: 200px;
 }
-
+.right{
+    width: 50%;
+    background-color: #fff;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
 .restaurant__list{
     display: flex;
+    background-color: #fff;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -209,29 +206,29 @@ header {
     margin-left: auto;
     height: 100%
 }
-.container-footer-1{
+.footer-1{
     background-color: #fff;
     padding: 20px 150px 50px;
     border-radius: 4px;
     margin-top: 60px;
     position: relative;
 }
-.container-footer-1 .title{
+.footer-1 .title{
     font-size: 22px;
     font-weight: 700;
 }
-.container-footer-1 img{
+.footer-1 img{
     vertical-align: center;
     border-style: none;
 }
-.container-footer-2{
+.footer-2{
     background-color: #fff;
     padding: 50px 350px 50px 150px;
     border-radius: 4px;
     margin-top: 60px;
     position: relative;
 }
-.container-footer-2 .footer-2-img{
+.footer-2-img{
     position: absolute;
     bottom: -1px;
     right: 0;
@@ -240,7 +237,7 @@ header {
     text-align: center;
     width: 350px;
 }
-.container-footer-2 img{
+.footer-2 img{
     vertical-align: center;
     border-style: none;
 }
@@ -252,7 +249,7 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-left: 50px;
+    
 }
 .bi-instagram{
     width: 30px;
@@ -273,7 +270,11 @@ header {
     content: "|";
 }
 .last-footer{
+    margin-bottom: 25px;
     text-align: right;
     float: right;
     font-size: 16px;
+}
+.info_local{
+    line-height: 0.25cm;
 }
