@@ -1,0 +1,52 @@
+.shopeef__logo img {
+    width: 153px;
+    height: 30px;
+}
+.search{
+    width: 30px;
+    height: 30px;
+}
+body {
+    margin: 0;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #464646;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+ul.product_list{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    width: 100%;
+}
+ul.product_list li {
+    width: 16%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    float: left;
+    background-color: ghostwhite;
+}
+ul.product_list li img{
+    width: 100%;
+}
+ul.product_list p{
+    margin-bottom: 0%;
+}
+ul.product_list hr{
+    margin: 0%;
+}
+p.title_product{
+    color: black;
+    font-weight: bold;
+}
+p.address_product{
+    color: darkgray;
+}
+ul.product_list li a{
+    text-decoration: none;
+}
+p.promotion{
+    font-weight: bold;
+}
