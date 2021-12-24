@@ -347,13 +347,3 @@ main{
     border-radius: 4px;
     background-color: #fff;
 }
-.promotion{
-    background-color: #fbf9d8;
-    position: relative;
-    overflow: hidden;
-    margin-left: -15px;
-    margin-right: -15px;
-    border: 1px dashed #575757;
-    padding: 2px 15px 0 89px;
-    display: none;
-}
