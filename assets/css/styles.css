@@ -1,198 +1,47 @@
-:root{
-    --white-color: #fff;
-    --black-color: #000;
-    --text-color: #333;
-}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-size: 100%;
-    font-family:'Roboto', sans-serif;
-    line-height:1.15;
-    box-sizing: border-box;
-    -webkit-text-size-adjust:100%;
-    -ms-text-size-adjust:100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color:rgba(0,0,0,0)
-} 
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-.grid__full-width{
-    width: 100%;
-}
-.grid_row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.btn-secondary{
-    color: #252525;
-    background-color: #ebeff3;
-    padding: 10px 27px 10px 19px;
-    border: none;
-}
-.dropdown-item .count{
-    text: right;
-}
-.main-nav {
-    padding-left: 48px;
-    padding-right: 0;
-    white-space: nowrap;
-}
-.nav-item{
-    color: #000;
-    padding: 10px 12px 21px;
-    margin-bottom: 10px;
-}
-.main-nav .nav-item.active{
-    color:#ee4d2d;
-    font-weight: 700;
-    border-bottom-color:#ee4d2d ;
-}
-.btn-outline-danger{
-    margin-left: 10px;
-    padding: 7px 12px;
-    background-color: #fff;
-    border-color: #ee4d2d;
-    color: #ee4d2d;
-}
-.header-icon-search{
-    cursor: pointer;
-    margin-top: 6px;
-    width: 24px;
-    height: 24px;
-    background-image: url(asset/img/search-dark.jpg);
-    background-size: cover;
-}
-body {
-    margin: 0;
-    font-family: Noto Sans,Arial,sans-serif;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #464646;
-    text-align: left;
-    background-color: #f2f2f2;
-}
-
-.search .title {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #fff;
-}
-.search .local {
-    font-size: 15px;
-    text-transform: capitalize;
-    color: #fff;
-}
-.search .form-search .input-group input {
-    width: 100%;
-    padding-right: 75px;
-    padding-left: 10px;
-    height: 50px;
-    border: 0;
-    border-radius: 6px 10px 10px 6px;
-}
-.container-fluid{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: #fff;
-    height: 70px;
-}
-main{
-    width: 100%;
-    display: flex;
-    background-color: rgba(255, 255, 255,0.9);
-    background-image: url(assets/img/main-banner.jpg);
-    background-repeat: no-repeat;
-}
-.form-search{
-    width: 100%;
-    margin: 10px;
-    padding-right: 75px;
-    padding-left: 5px;
-    height: 50px;
-    border: 0;
-    border-radius: 6px 10px 10px 6px;
-}
-.form-search .btn-primary{
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 0 6px 6px 0;
-    padding-top: 11px;
-}
-.btn-outline-light{
-    margin: 8px;
-    padding: 5px 15px;
-    font-size: 14px;
-}
-.font18 {
-    font-size: 1.125rem!important;
-    color: #fff;
-}
-.boxfood {
+.shopeefood__header {
     background-color: white;
-    border-radius: 10px;
-    margin-top: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 100%;
-    height: 100%;
-}
-
-.boxfood img{
-    object-fit: cover;
-}
-
-.boxfoodjr img{
-    object-fit: cover;
-}
-
-header {
     position: fixed;
-    top: 0;
+    top: 0px;
+}
+
+body{
+    background: #f2f2f2!important;
+}
+
+.shopeefood__logo img {
+    width: 153px;
+    height: 30px;
 }
 
 .shopeefood__body {
-    margin-top: 100px;
-    overflow: hidden;
-    
+    background-color: black;
+    margin-top: 60px;
 }
 
-.body__rightside {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-}
-.body__rightside {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-}
 
-.restaurant {
-    width: 186px;
-    height: 200px;
-}
 
-.restaurant__list{
+.restaurant__list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 600px;
+}
+
+.restaurant {
+    width: 185px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
 }
 
 .restaurant__cover {
@@ -202,229 +51,14 @@ header {
 
 .restaurant__cover img {
     object-fit: cover;
-    width: 100%;
     height: 100%;
-}
-.container-footer{
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 100%
-}
-.container-footer-1{
-    background-color: #fff;
-    padding: 20px 150px 50px;
-    border-radius: 4px;
-    margin-top: 60px;
-    position: relative;
-}
-.container-footer-1 .title{
-    font-size: 22px;
-    font-weight: 700;
-}
-.container-footer-1 img{
-    vertical-align: center;
-    border-style: none;
-}
-.container-footer-2{
-    background-color: #fff;
-    padding: 50px 350px 50px 150px;
-    border-radius: 4px;
-    margin-top: 60px;
-    position: relative;
-}
-.container-footer-2 .footer-2-img{
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    z-index: 2;
-    line-height: 0;
-    text-align: center;
-    width: 350px;
-}
-.container-footer-2 img{
-    vertical-align: center;
-    border-style: none;
-}
-.footer-icon{
-    display: inline-block;
-    padding: 0 8px;
-}
-.bi-facebook{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 50px;
-}
-.bi-instagram{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 20px;
-}
-.footer-img{
-    size: 16px;
-}
-.font-weight-bold{
-    font-weight: 700;
-    color: #000;
-}
-.text-decoration-none{
-    color:  #464646;
-    padding: 0 3px;
-    content: "|";
-}
-.last-footer{
-    text-align: right;
-    float: right;
-    font-size: 16px;
-}
-=======
-}
->>>>>>> parent of e1f125a (19)
-=======
-}
->>>>>>> parent of e1f125a (19)
-.main-login{
-    text-align: center;
     width: 100%;
-    max-width: 600px;
-    padding: 30px 30px 30px 30px;
-    margin:auto;
-}
-.phone{
-    margin-bottom: 10px;
-    background-color: #329900;
-}
-.facebook{
-    margin-bottom: 10px;
-    background-color: #187caa;
-}
-.google{
-    margin-bottom: 10px;
-    background-color: #ff5252;
-}
-#btnlogin{
-    background-color: #187caa;
-}
-.left-group{
-    float: left!important;
-}
-.right-group{
-    float: right!important;
-}
-.now-login .btn-submit {
-    margin-bottom: 15px;
-    padding: 6px 0;
-    text-transform: uppercase;
-}
-.btn-block {
-    display: block;
-    width: 100%;
-}
-.mess-policy{
-    font-size: small;
-}
-.form-control:focus {
-	border-color: #5cb85c;
-}
-.form-control, .btn {
-	border-radius: 50px;
-	outline: none !important;
-}
-.signup-form {
-	width: 480px;
-	margin: 0 auto;
-	padding: 30px 0;
-}
-.signup-form form {
-	border-radius: 5px;
-	margin-bottom: 20px;
-	background: #fff;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 40px;
-}
-.signup-form a {
-	color: #5cb85c;
-}    
-.signup-form h2 {
-	text-align: center;
-	font-size: 34px;
-	margin: 10px 0 15px;
-}
-.signup-form .hint-text {
-	color: #999;
-	text-align: center;
-	margin-bottom: 20px;
-}
-.signup-form .form-group {
-	margin-bottom: 20px;
-}
-.signup-form .btn {        
-	font-size: 18px;
-	line-height: 26px;
-	font-weight: bold;
-	text-align: center;
-}
-.signup-btn {
-	text-align: center;
-	border-color: #5cb85c;
-	transition: all 0.4s;
-}
-.signup-btn:hover {
-	background: #5cb85c;
-	opacity: 0.8;
-}
-.or-seperator {
-	margin: 50px 0 15px;
-	text-align: center;
-	border-top: 1px solid #e0e0e0;
-}
-.or-seperator b {
-	padding: 0 10px;
-	width: 40px;
-	height: 40px;
-	font-size: 16px;
-	text-align: center;
-	line-height: 40px;
-	background: #fff;
-	display: inline-block;
-	border: 1px solid #e0e0e0;
-	border-radius: 50%;
-	position: relative;
-	top: -22px;
-	z-index: 1;
-}
-.social-btn .btn {
-	color: #fff;
-	margin: 10px 0 0 15px;
-	font-size: 15px;
-	border-radius: 50px;
-	font-weight: normal;
-	border: none;
-	transition: all 0.4s;
-}	
-.social-btn .btn:first-child {
-	margin-left: 0;
-}
-.social-btn .btn:hover {
-	opacity: 0.8;
-}
-.social-btn .btn-primary {
-	background: #507cc0;
-}
-.social-btn .btn-info {
-	background: #64ccf1;
-}
-.social-btn .btn-danger {
-	background: #df4930;
-}
-.social-btn .btn i {
-	float: left;
-	margin: 3px 10px;
-	font-size: 20px;
-}
-.btn-login{
-    background-color: #187caa;
 }
 
+
+
+.introbox{
+    background-color: white;
+    border-radius: 10px;
+    
+}
