@@ -338,6 +338,8 @@ main{
     text-overflow: ellipsis;
     margin: 5px;
     padding: 2px;
+    color: #464646;
+    
 }
 .category-right{
     width: 590px;
@@ -346,4 +348,18 @@ main{
     padding: 6px 15px;
     border-radius: 4px;
     background-color: #fff;
+}
+.btn-primary{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #ee4d2d;
+}
+.bill-header{
+    background-color: #fff;
+    border-radius: 4px;
+    top: 48px;
+    right: 10px;
+    width: 315px;
+    margin-left: 20px;
 }
