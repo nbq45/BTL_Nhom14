@@ -10,9 +10,14 @@
     text-align: center;
     width: 100%;
     max-width: 600px;
+
     padding: 30px 30px 30px 30px;
     margin:auto;
 }
+.form-login{
+	background-color: #fff;
+}
+
 .phone{
     margin-bottom: 10px;
     background-color: #329900;
