@@ -62,3 +62,158 @@ body{
     border-radius: 10px;
     
 }
+.footer-1{
+    background-color: #fff;
+    padding: 20px 150px 50px;
+    border-radius: 4px;
+    margin-top: 60px;
+    position: relative;
+}
+.footer-1 .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-1 img{
+    vertical-align: center;
+    border-style: none;
+}
+.footer-2{
+    background-color: #fff;
+    padding: 50px 350px 50px 150px;
+    border-radius: 4px;
+    margin-top: 60px;
+    position: relative;
+}
+.footer-2-img{
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 2;
+    line-height: 0;
+    text-align: center;
+    width: 350px;
+}
+.footer-2 img{
+    vertical-align: center;
+    border-style: none;
+}
+.footer-icon{
+    display: inline-block;
+    padding: 0 8px;
+}
+.bi-facebook{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.bi-instagram{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.footer-img{
+    size: 16px;
+}
+.font-weight-bold{
+    font-weight: 700;
+    color: #000;
+}
+.text-decoration-none{
+    color:  #464646;
+    padding: 0 3px;
+    content: "|";
+}
+.last-footer{
+    margin-bottom: 25px;
+    text-align: right;
+    float: right;
+    font-size: 16px;
+}
+.info_local{
+    line-height: 0.25cm;
+}
+.main_detail{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.figure-img{
+    width: 645px;
+    padding-bottom: 15px;
+    margin-left: 200px;
+}
+.detail_info{
+    width: 645px;
+    padding-bottom: 15px;
+}
+.name_restaurant{
+    color: #464646;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.restaurant__local{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+.number-rating{
+    background-color: #ffc107;
+    padding: 0 5px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 5px;
+}
+.main-footer{
+    width: 100%;
+    height: 100%;
+}
+.menu-restaurant .item{
+    color: #cf2127;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 13px 26px;
+    padding-left: 120px;
+    cursor: default;
+}
+.menu-category{
+    position: relative;
+}
+.category-left{
+    background-color: #fff;
+    padding: 15px 5px 15px 15px;
+    width: 235px;
+    border-radius: 4px;
+}
+.nav-link{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px;
+    padding: 2px;
+    color: #464646;
+    
+}
+.category-right{
+    width: 590px;
+    height: 100%;
+    margin-left: 10px;
+    padding: 6px 15px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.btn-primary{
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #ee4d2d;
+}
+.bill-header{
+    background-color: #fff;
+    border-radius: 4px;
+    top: 48px;
+    right: 10px;
+    width: 315px;
+    margin-left: 20px;
+}
