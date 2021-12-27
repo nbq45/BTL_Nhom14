@@ -22,23 +22,28 @@ body{
 }
 
 .shopeefood__body {
-    background-color: black;
+    background-image: url(https://shopeefood.vn/app/assets/img/main-banner.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 60px;
 }
+
 .restaurant__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     height: 600px;
 }
 
+
 .restaurant {
     width: 185px;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    height: 180px;
+    margin: 10px 10px;
     border: 1px solid #d7d7d7;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .restaurant__cover {
@@ -59,6 +64,34 @@ body{
     border-radius: 10px;
     
 }
+
+.collection__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.collection {
+    width: 185px;
+    height: 180px;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.collection__cover {
+    width: 100%;
+    height: 116px;
+}
+
+.collection__cover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
 .footer-1{
     background-color: #fff;
     padding: 20px 150px 50px;
