@@ -25,9 +25,6 @@ body{
     background-color: black;
     margin-top: 60px;
 }
-
-
-
 .restaurant__list {
     display: flex;
     flex-direction: row;
@@ -209,11 +206,31 @@ body{
     font-weight: 700;
     background-color: #ee4d2d;
 }
-.bill-header{
+.bill-restaurant{
     background-color: #fff;
     border-radius: 4px;
     top: 48px;
     right: 10px;
     width: 315px;
     margin-left: 20px;
+}
+.bill-header{
+    border-bottom: 1px solid #ebebeb;
+    padding: 7px 10px;
+}
+.btn-group .btn{
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.bill-3{
+    font-size: 13px;
+    padding: 4px 10px;
+    background-color: #ebebeb;
+}
+.btn-danger{
+    background: #ee4d2d;
+    font-size: 15px;
+    margin: 12px 10px 15px;
+    width: calc(100% - 20px);
 }
