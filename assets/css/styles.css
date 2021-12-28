@@ -267,3 +267,35 @@ body{
     margin: 12px 10px 15px;
     width: calc(100% - 20px);
 }
+.introbox-1{
+    padding: 20px 150px 50px;
+    border-radius: 4px;
+    position: relative;
+}
+.introbox-2{
+    padding: 50px;
+    border-radius: 4px;
+    position: relative;
+}
+.last-footer{
+    margin-bottom: 25px;
+    text-align: right;
+    float: right;
+    font-size: 16px;
+}
+.footer-icon{
+    display: inline-block;
+    padding: 0 8px;
+}
+.bi-facebook{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.bi-instagram{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+}
