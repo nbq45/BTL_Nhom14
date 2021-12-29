@@ -289,6 +289,36 @@ body{
     color: #464646;
     padding: 10px-15px;
 }
+.direction-content{
+    background-color: #fff;
+    width: 379px;
+    height: 172px;
+}
+.direction-info{
+    padding: 5px 10px 5px 23px;
+}
+.direction-from{
+    padding: 5px 0;
+    position: relative;
+}
+.direction-name{
+    font-size: 13px;
+    font-weight: 700;
+    max-width: 96%;
+}
+.direction-to{
+    padding: 5px 0;
+    position: relative;
+}
+.direction-to .direction-address{
+    font-size: 12px;
+}
+.direction-time{
+    border: 1px solid #464646;
+    border-radius: 12px;
+    padding: 2px 3px;
+    background-color: #fbf9d8;
+}
 .order-right{
     background-color: #fff;
     font-size: 14px;
