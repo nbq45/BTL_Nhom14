@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shopeefood__header {
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+}
+
+.dropdown-item .local{
+    text-align: right;
+    font-size: 12px;
+}
+
+body{
+    background: #f2f2f2!important;
+}
+
+footer{
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+}
+
+.font-weight-bold{
+    font-weight: 700;
+    color: #000;
+}
+
+.footer-img{
+    size: 16px;
+}
+.last-footer{
+    margin-bottom: 25px;
+    text-align: right;
+    float: right;
+    font-size: 16px;
+}
+.footer-icon{
+    display: inline-block;
+    padding: 0 8px;
+}
+.bi-facebook{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.bi-instagram{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 20px;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/food_detail.css">
     <link href="login.html">
     <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false">
     </script>
@@ -29,7 +29,7 @@
     </script>
     <title>ShopeeFood</title>
 </head>
-<body>
+<body >
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid mt-1">
@@ -88,15 +88,16 @@
             <div class="container-md-5 row">
               <div class="col-md-6">
                 <figure class="figure-img">
-                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg" width="450px" alt="Stamp Coffee - Đinh Tiên Hoàng">
+                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg" width="480px" height="300
+                    " alt="Stamp Coffee - Đinh Tiên Hoàng">
                 </figure>
             </div>
             <div class="col-md-6">
-                <nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+                <nav style="--bs-breadcrumb-divider:'>>';" aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item"><a href="#">Hà Nội</a></li>
-                      <li class="breadcrumb-item"><a href="#">Stamp Coffee - Đinh Tiên Hoàng</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Hà Nội</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Stamp Coffee - Đinh Tiên Hoàng</a></li>
                     </ol>
                 </nav>
                 <div class="detail_info">
@@ -124,245 +125,256 @@
                             <i class="bi bi-currency-dollar"></i> 10,000 - 50,000
                         </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col">
+                    <hr style="color: #959595; width: 600px" >
+                    <div class="utility">
+                      <div class="row">
+                        <div class="col-md-3">
                             <h1 style="color: #959595; font-size: 13px;">Phí dịch vụ</h1>
-                            <p class="text-bold " style="color: red;" >0.0% Phí phục vụ</p>
+                            <p class="text-bold ">0.0% Phí phục vụ</p>
                         </div>
+                        <br>
                         <div class="col-md">
                             <h1 style="color: #959595; font-size: 13px;">Dịch vụ bởi</h1>
-                            <p class="text-bold " style="color: red;">ShopeeFood</p>
+                            <p class="text-bold ">ShopeeFood</p>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
             </div>
         </div>
     </main>
-    <div class="main-footer">
+    <div class="main-footer" >
       <div class="menu-restaurant">
             <h1 class="item active">Thực đơn</h1>
       </div>
       <div class="menu_category">
-        <div class="container" >
+        <div class="container">
           <div class="row">
-            <div class="col-md-9" >
+            <div class="col-md-9">
               <div class="contain-fluid">
                 <div class="row">
-                  <div class="col-sm-3 col-4" id="myScrollspy">
+                  <nav id="myScrollspy" class="col-sm-3 col-4" >
                     <div class="category-left">
                       <ul class="nav nav-pills flex-column">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#section1">ƯU ĐÃI</a>
+                          <a class="nav-link" href="#section1">ƯU ĐÃI</a>
                           <a class="nav-link" href="#section2" >CÀ PHÊ</a>
                           <a class="nav-link" href="#section3" >TRÀ</a>
                           <a class="nav-link" href="#section4" >ĐỒ UỐNG KHÁC</a>
                           <a class="nav-link" href="#section5" >ĐỒ ĂN VẶT</a>
                         </li>
                     </div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="category-right">
-                      <ul class="nav nav-pills flex-column">
-                        <li class="nav-item">
-                          <div id="section1" >
-                            <div class="col-md text-muted" style="font-size:large;">ƯU ĐÃI</div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                  <img src="assets/img/voucher.jpg" width="40px" alt=""> Giảm 40K trên tổng đơn 100k
-                                </li>
-                                <li class="list-group-item">
-                                  <img src="assets/img/voucher.jpg" width="40px" alt=""> Freeship 15k cho đơn từ 50k tở lên
-                                </li>
-                                <li class="list-group-item">
-                                  <img src="assets/img/voucher.jpg" width="40px" alt="">Mua 1 tặng 1 cho mỗi thứ 6 hàng tuần tháng 12
-                                </li>
-                            </ul>
-                          </div>
-                          <div id="section2" > 
-                            <div class="col-md text-muted" style="font-size:large;">CÀ PHÊ</div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/bac-xiu.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Bạc xỉu</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1;">35,000đ
-                                    <button type="button" class="btn btn-primary">+</button>
-                                  </h1>
+                  </nav>
+                  <div class="col-sm-5 col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#myScrollspy" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                      <div class="category-right">
+                        <ul class="nav nav-pills flex-column">
+                          <li class="nav-item">
+                            <div id="section1" >
+                              <div class="container promotions">
+                                <div class="col-md text-muted" style="font-size:large;">ƯU ĐÃI</div>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item">
+                                      <img src="assets/img/voucher.jpg" width="40px" style="margin-right: 10px;" alt=""> Giảm 40K trên tổng đơn 100k
+                                      <button class="copy-code">copy code <i class="bi bi-clipboard"></i></button>
+                                    </div>
+                                    <div class="list-group-item">
+                                      <img src="assets/img/voucher.jpg" width="40px" style="margin-right: 10px;" alt=""> Freeship 15k cho đơn từ 50k tở lên
+                                      <button class="copy-code">copy code <i class="bi bi-clipboard"></i></button>
+                                    </div>
+                                    <div class="list-group-item">
+                                      <img src="assets/img/shopeefood_voucher_shipping.jpg" style="margin-right: 10px;" width="40px" alt="">Mua 1 tặng 1 cho mỗi thứ 6 hàng tuần tháng 12
+                                      <button class="copy-code">copy code <i class="bi bi-clipboard"></i></button>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/cafe-den.jpg" width="70%"></a>
+                            <div id="section2" > 
+                              <div class="col-md text-muted" style="font-size:large;">CÀ PHÊ</div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/bac-xiu.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right" >Bạc xỉu</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1;">35,000đ
+                                      <button type="button" class="btn btn-primary">+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Cà phê đen</h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/cafe-den.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Cà phê đen</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">28,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">28,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/cafe-nau.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Cà phê nâu</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">30,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/cafe-nau.jpg" width="70%"></a>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/capuchino.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Capuchino</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">40,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Cà phê nâu</h1>
+                            </div> 
+                            <div id="section3">
+                              <div class="col-md text-muted" style="font-size:large;">TRÀ</div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/tra-dao-cam-sa.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Trà đào cam sả</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">35,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">30,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/tra-chanh.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Trà chanh</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">28,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/capuchino.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Capuchino</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">40,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                          </div> 
-                          <div id="section3">
-                            <div class="col-md text-muted" style="font-size:large;">TRÀ</div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/tra-dao-cam-sa.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Trà đào cam sả</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">35,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/tra-chanh.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Trà chanh</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">28,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/hong-tra-sua.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Hồng trà sữa</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">40,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="section4">
-                            <div class="col-md text-muted" style="font-size:large;">ĐỒ UỐNG KHÁC</div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/sua-chua-da.jfif" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Sữa chua đánh đá</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">28,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/sua-chua-cacao.jpg" width="70px"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Sữa chau cacao</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">30,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/hong-tra-sua.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right" >Hồng trà sữa</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">40,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
                             </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/sua-chua-cafe.jpg" width="70%"></a>
+                            <div id="section4">
+                              <div class="col-md text-muted" style="font-size:large;">ĐỒ UỐNG KHÁC</div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/sua-chua-da.jfif" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Sữa chua đánh đá</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">28,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">sữa chua cafe</h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/sua-chua-cacao.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Sữa chua cacao</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">30,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">35,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                          </div>
-                          <div id="section5">
-                            <div class="col-md text-muted" style="font-size:large;">ĐỒ ĂN VẶT</div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/banh-quy.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Bánh quy bơ</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">20,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/banh-quy-socola.jpg" width="70px"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Bánh quy socola</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">30,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-sm-3">
-                                <a href=""><img src="assets/img/huong-duong.jpg" width="70%"></a>
-                              </div>
-                              <div class="col-sm-6">
-                              <h1 class="text text-right" style="font-size: medium; font-weight: 700;">Hướng dương</h1>
-                              </div>
-                              <div class="col-sm-3">
-                                  <h1 class="text text-right" style="font-size: medium; font-weight: 700; color: #0288d1">20,000đ
-                                    <button type="button" class="btn btn-primary" >+</button>
-                                  </h1>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/sua-chua-cafe.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">sữa chua cafe</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">35,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </li>
-                      </ul>
+                            <div id="section5">
+                              <div class="col-md text-muted" style="font-size:large;">ĐỒ ĂN VẶT</div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/banh-quy.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Bánh quy bơ</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">20,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/banh-quy-socola.jpg" width="60%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Bánh quy socola</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">30,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <a href=""><img src="assets/img/huong-duong.jpg" width="50%" style="margin: 5px;"></a>
+                                </div>
+                                <div class="col-sm-6">
+                                <h1 class="text text-right">Hướng dương</h1>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h1 class="text text-right" style="color: #0288d1">20,000đ
+                                      <button type="button" class="btn btn-primary" >+</button>
+                                    </h1>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -411,7 +423,7 @@
                         <!-- Modal Header -->
                         <div class="modal-header">
                           Xác nhận đơn hàng
-                          <button class="btn btn-primary btn-sm" style="background-color: #0288d1;" type="button"data-bs-dismiss="modal">ĐẶT HÀNG<i class="bi bi-arrow-right"></i></button>  
+                          <button class="btn btn-primary btn-sm"  type="button"data-bs-dismiss="modal">ĐẶT HÀNG<i class="bi bi-arrow-right"></i></button>  
                           <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
                         </div>
                         <!-- Modal body -->
@@ -513,9 +525,12 @@
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                          <div class="d-grid gap-2">
-                            <button type="button" class="btn btn-info btn-lg" style="color: #fff;">ĐẶT HÀNG <i class="bi bi-arrow-right-short"></i></button>
-                          </div>
+                          <button type="button" class="btn btn-info btn-lg">
+                            <div class="row">
+                              <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
+                              <div class="col-md-3"><span class="total-price">0đ</span></div>
+                            </div>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -527,63 +542,61 @@
         </div>
       </div>
     </div>
-    <hr>
     <footer>        
-        <div class="row mt-2">
-          <div class="col-md">
-            <p class="font-weight-bold">Công ty</p>
-            <ul class="list-group"></ul>
-              <li><a href="" class="text-decoration-none link-primary">Giới thiệu</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Trung tâm trợ giúp</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Quy chế</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Điều khoản sử dụng</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Bảo mật thông tin</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Giải quyết khiếu nại</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Liên hệ</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Hợp tác nhân viên giao nhận</a></li>
-              <li><a href="" class="text-decoration-none link-primary">Đăng ký quán</a></li>
-              <li><a href="" class="text-decoration-none link-primary">ShopeeFood Uni</a></li>
-            </ul>
+      <div class="row mt-2">
+        <div class="col-md">
+          <p class="font-weight-bold">Công ty</p>
+          <ul class="list-group">
+                  <h6><a href="" class="text-decoration-none link-primary">Giới thiệu</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Trung tâm trợ giúp</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Quy chế</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Điều khoản sử dụng</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Bảo mật thông tin</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Giải quyết khiếu nại</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Liên hệ</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Hợp tác nhân viên giao nhận</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">Đăng ký quán</a></h6>
+                  <h6><a href="" class="text-decoration-none link-primary">ShopeeFood Uni</a></h6>
+              </ul>
+            </div>
+            <div class="col-md">
+              <p class="font-weight-bold">Ứng dụng ShopeeFood</p>
+              <div class="footer-img">
+                <h2><a href="" ><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
+                <h2><a href="" ><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
+                <h2><a href="" ><img src="assets/img/Huawei-gallery-vn.jpg" width="100px"></a></h2>
               </div>
-              <div class="col-md">
-                <p class="font-weight-bold">Ứng dụng ShopeeFood</p>
+            </div>
+            <div class="col-md">
+              <a href=""><img src="assets/img/Logo-ShopeefoodVN.jpg" width="100px"></a>
+              <div class="col-md text-muted">
+                &copy: 2021 ShopeeFood
+              </div>
+              <div class="footer-icon">
+                  <a href="" class="rounded float-start"><i class="bi bi-facebook" style="font-size: 2rem; color: gray"></i></a>
+                  <a href="" class="rounded float-start"><i class="bi bi-instagram" style="font-size: 2rem; color: gray"></i></a>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="last-footer">
+                <p class="font-weight-bold">Địa chỉ công ty</p>
+                <div class="info_local">
+                  <h6>Công Ty Cổ Phần Foody</h6>
+                        <h6>Lầu G, Tòa nhà Jabes 1,</h6>
+                        <h6>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</h6>
+                        <h6>Giấy CN ĐKDN số: 0311828036</h6>
+                        <h6>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</h6>
+                        <h6>sửa đổi lần thứ 23, ngày 10/12/2020</h6>
+                        <h6>Số điện thoại: 1900 2042</h6>
+                        <h6>Email: <a href="" class="text-decoration-none" style="color: #3a94ee">info@shopeefood.vn</a> </h6>
+                </div>
                 <div class="footer-img">
-                  <h2><a href="" ><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
-                  <h2><a href="" ><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
-                  <h2><a href="" ><img src="assets/img/Huawei-gallery-vn.jpg" width="100px"></a></h2>
+                  <a href="" class="text-decoration-none link-primary"><img src="assets/img/gov_seals1.jpg" width="170px"></a>
                 </div>
               </div>
-              <div class="col-md">
-                <a href=""><img src="assets/img/Logo-ShopeefoodVN.jpg" width="100px"></a>
-                <div class="col-md text-muted">
-                  &copy: 2021 ShopeeFood
-                </div>
-                <div class="footer-icon">
-                    <a href="" class="rounded float-start"><i class="bi bi-facebook" style="font-size: 2rem; color: gray"></i></a>
-                    <a href="" class="rounded float-start"><i class="bi bi-instagram" style="font-size: 2rem; color: gray"></i></a>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="last-footer">
-                  <p class="font-weight-bold">Địa chỉ công ty</p>
-                  <div class="info_local">
-                    <p>Công Ty Cổ Phần Foody</p>
-                    <p>Lầu G, Tòa nhà Jabes 1,</p>
-                    <p>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</p>
-                    <p>Giấy CN ĐKDN số: 0311828036</p>
-                    <p>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</p>
-                    <p>sửa đổi lần thứ 23, ngày 10/12/2020</p>
-                    <p>Số điện thoại: 1900 2042</p>
-                    <p>Email: info@shopeefood.vn</p>
-                  </div>
-                  <div class="footer-img">
-                    <a href="" class="text-decoration-none link-primary"><img src="assets/img/gov_seals1.jpg" width="170px"></a>
-                  </div>
-                </div>
-              </div>
-    <hr>
-  </div>
-    </footer>
+            </div>
+</div>
+  </footer>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
