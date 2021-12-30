@@ -38,141 +38,14 @@ body{
     margin-top: 60px;
 }
 
-.restaurant__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 600px;
-}
-
-
-.restaurant {
-    width: 185px;
-    height: 180px;
-    margin: 10px 10px;
-    border: 1px solid #d7d7d7;
-    border-radius: 10px;
-}
-
-.restaurant__cover {
-    width: 100%;
-    height: 116px;
-}
-
-.restaurant__cover img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-.introbox{
-    background-color: white;
-    border-radius: 10px;
-    
-}
-
-.collection__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
-}
-
-.collection {
-    width: 185px;
-    height: 180px;
-    margin: 10px 10px;
-    border-radius: 10px;
-}
-
-.collection__cover {
-    width: 100%;
-    height: 116px;
-}
-
-.collection__cover img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-footer{
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.footer-1{
-    background-color: #fff;
-    padding: 20px 150px 50px;
-    border-radius: 4px;
-    margin-top: 60px;
-    position: relative;
-}
-.footer-1 .title{
-    font-size: 22px;
-    font-weight: 700;
-}
-.footer-1 img{
-    vertical-align: center;
-    border-style: none;
-}
-.footer-2{
-    background-color: #fff;
-    padding: 50px 350px 50px 150px;
-    border-radius: 4px;
-    margin-top: 60px;
-    position: relative;
-}
-.footer-2-img{
-    position: absolute;
-    bottom: -1px;
-    right: 0;
-    z-index: 2;
-    line-height: 0;
-    text-align: center;
-    width: 350px;
-}
-.footer-2 img{
-    vertical-align: center;
-    border-style: none;
-}
-.footer-icon{
-    display: inline-block;
-    padding: 0 8px;
-}
-.footer-img{
-    size: 16px;
-}
-.font-weight-bold{
-    font-weight: 700;
-    color: #000;
-}
-.text-decoration-none{
-    color:  #464646;
-    padding: 0 3px;
-    content: "|";
-}
-.last-footer{
-    margin-bottom: 25px;
-    text-align: right;
-    float: right;
-    font-size: 16px;
-}
-.info_local{
-    line-height: 0.25cm;
-}
 .main_detail{
     width: 100%;
     background-color: #fff;
     padding-top: 30px;
+    position: relative;
 }
 .figure-img{
-    width: 645px;
-    padding-bottom: 15px;
     margin-left: 200px;
-}
-.detail_info{
-    width: 645px;
-    padding-bottom: 15px;
 }
 .name_restaurant{
     color: #464646;
@@ -190,6 +63,10 @@ footer{
     border-radius: 4px;
     color: #fff;
     margin: 0 5px;
+}
+.utility .text-bold{
+    color: #ee4d2d;
+    font-weight: 600;
 }
 .main-footer{
     width: 100%;
@@ -229,7 +106,30 @@ footer{
     border-radius: 4px;
     background-color: #fff;
 }
-.btn-primary{
+.category-right .text-right{
+    color: #464646;
+    font-size: 16px;
+    font-weight: 600;
+}
+.category-right .promotions{
+    background-color: #fbf9d8;
+    border: 1px dashed #575757;
+}
+.list-group-item{
+    background-color: #fbf9d8;
+}
+.copy-code{
+    top: 10px;
+    font-size: 12px;
+    color: #575252;
+    font-weight: 700;
+    background: none;
+    border: none;
+    float: right;
+}
+.category-right .btn-primary{
+    margin-left: 10px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     font-weight: 700;
@@ -276,6 +176,7 @@ footer{
 }
 .modal-header .btn-primary{
     margin-left: 500px;
+    font-size: 12px;
 }
 .modal-body{
     color: #464646;
@@ -331,6 +232,27 @@ footer{
     padding: 50px;
     border-radius: 4px;
     position: relative;
+}
+.modal-footer .btn-info{
+    width: 869px;
+    height: 44px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 40px;
+    position: relative;
+}
+.footer-img{
+    size: 16px;
+}
+.font-weight-bold{
+    font-weight: 700;
+    color: #000;
 }
 .last-footer{
     margin-bottom: 25px;
