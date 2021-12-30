@@ -8,25 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/food_detail.css">
     <link href="login.html">
-    <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false">
-    </script>
-    <script>
-          //Khoi tao Map
-          function initialize() {
-            //Khai bao cac thuoc tinh
-            var mapProp = {
-              //Tam ban do, quy dinh boi kinh do va vi do
-              center:new google.maps.LatLng(21.033693, 105.8466346),
-              //set default zoom cua ban do khi duoc load
-              zoom:5,
-              //Dinh nghia type
-              mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-            //Truyen tham so cho cac thuoc tinh Map cho the div chua Map
-            var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-          }
-          google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     <title>ShopeeFood</title>
 </head>
 <body >
@@ -431,7 +412,7 @@
                           <div class="col-md-6">
                             <div class="order-left">
                               <div class="order-map">
-                                <div id="googleMap" style="width:379px;height:325px;"></div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465.51811711092483!2d105.8536866996911!3d21.02688595439839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb3bda9ed9%3A0x5d03e2cd4f7916eb!2zNzUgxJBpbmggVGnDqm4gSG_DoG5nLCBUcsOgbmcgVGnhu4FuLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1640872684756!5m2!1svi!2s" width="379" height="325" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                               </div>
                               <div class="direction-content">
                                 <div class="container">
@@ -525,7 +506,7 @@
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-info btn-lg">
+                          <button type="button" class="btn btn-info btn-lg" href="order_food.html" data-bs-toggle="modal" data-bs-target="#incoming-order">
                             <div class="row">
                               <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
                               <div class="col-md-3"><span class="total-price">0đ</span></div>
