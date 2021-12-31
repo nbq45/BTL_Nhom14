@@ -39,7 +39,7 @@ body{
     justify-content: space-between;
 }
 
-.minutes-container {
+.minutes-container{
     font-weight: 700;
     color: #454545;
     display: flex;
@@ -52,6 +52,8 @@ body{
     height: 80px;
     border-radius: 99px;
 }
+
+
 .block-title{
     color: #454545;
     font-size: 27px;
