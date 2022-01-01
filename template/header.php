@@ -49,12 +49,12 @@
                       Hà Nội
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="index.html">
+                      <li><a class="dropdown-item" href="index.php">
                           <span >Hà Nội</span>
                           <span class="local text-muted">37811 địa điểm</span>
                       </a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="index_hcm.html">
+                      <li><a class="dropdown-item" href="index_hcm.php">
                           <span >TP. HCM</span>
                           <span class="local text-muted">78481 địa điểm</span>
                       </a>
@@ -62,7 +62,7 @@
                   </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Đồ Ăn</a>
+                    <a class="nav-link" href="index.php">Đồ Ăn</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Thực Phẩm</a>
@@ -86,7 +86,7 @@
                 <div class="header-icon-search">
                   <i class="bi bi-search"></i>
                 </div>
-                <button class="btn btn-outline-danger" type="submit">Đăng Nhập</button>
+                <button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>
               </div>
             </div>
           </nav>
