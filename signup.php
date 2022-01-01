@@ -14,7 +14,7 @@
 
 <body>
   <div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
+    <form action="process-register.php" method="post">
       <h2>Tạo tài khoản</h2>
       <p class="hint-text">Sign up with your social media account or email address</p>
       <div class="social-btn text-center">
@@ -37,7 +37,7 @@
           required="required">
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Đăng ký</button>
+        <input type="submit" name="btnSignUp" class="btn btn-success btn-lg btn-block signup-btn">Đăng ký</input>
       </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
