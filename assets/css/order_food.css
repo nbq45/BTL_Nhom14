@@ -32,6 +32,15 @@ body{
 .incoming-order{
     background-color: #f2f2f2;
 }
+.title-restaurant.btn{
+    padding: auto;
+}
+.title-restaurant .bi-telephone-fill{
+    margin: 5px;
+    color: rgb(19, 71, 241);
+    width: 50px;
+    height: 50px;
+}
 .countdown-container{
     display: flex;
     width: 100%;
@@ -53,7 +62,6 @@ body{
     border-radius: 99px;
 }
 
-
 .block-title{
     color: #454545;
     font-size: 27px;
@@ -72,7 +80,7 @@ body{
     border-radius: 5px 5px 0 0;
     background-color: #fff;
 }
-.history-table .container{
+.history-blog .container{
     background: #fff;
     padding: 20px 15px;
     border: 1px solid #ebebeb;
@@ -94,9 +102,71 @@ body{
 .history-list{
     margin-top: 20px;
 }
-.history-cell{
+.history-table{
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #ebebeb;
+}
+.history-table-heading{
     color: red;
     font-size: 13px;
+}
+.table-cell{
+    font-size: 13px;
+    flex: 1 1;
+    width: auto;
+    position: relative;
+    padding: 8px 5px;
+} 
+.history-cell-1{
+    width: 40px;
+    flex: 0 0 auto;
+}
+.history-cell-2{
+    width: 190px;
+    flex: 0 0 auto;
+}
+.history-cell-5{
+    width: 200px;
+    flex: 0 0 auto;
+}
+.history-cell-6{
+    width: 90px;
+    flex: 0 0 auto;
+}
+.history-cell-7{
+    width: 120px;
+    flex: 0 0 auto;
+}
+.history-cell-7 .table-status{
+    font-weight: 700;
+    display: block;
+    width: 90px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 5px;
+    padding: 0 10px;
+    border-radius: 3px;
+    text-align: center;
+    color: #464646;
+}
+.history-cell-7 .table-status{
+    cursor: default;
+    background: #6cc942;
+}
+.history-cell-7 .table-status-red{
+    color: #fff;
+    background: red;
+}
+.history-cell-7 .btn-secondary{
+    background: #d7d7d7;
+    border: none;
+}
+.history-cell-8{
+    width: 110px;
+    flex: 0 0 auto;
+    text-align: center;
 }
 
 footer{
