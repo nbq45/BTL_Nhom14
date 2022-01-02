@@ -2,7 +2,7 @@
     $host = 'localhost';
     $username = 'root';
     $password='';
-    $dbname = 'btl_nhom14';
+    $dbname = 'shopee_food';
     
     $conn = mysqli_connect($host,$username,$password,$dbname);
     if(!$conn) {

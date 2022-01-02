@@ -45,8 +45,8 @@ function sendEmailForAccountActive($email, $link) {
     
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = '[CSE485] Điểm danh Tuần 20 - 27/12';
-        $mail->Body    = 'Mã sinh viên: 1951060963 - Họ tên: Nguyễn Bảo Quốc';
+        $mail->Subject = '[Shopee_food] verify your account';
+        $mail->Body    = 'Mã sinh viên: 1951060963 - Họ tên: Nguyễn Bảo Quốc'.$link;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();
