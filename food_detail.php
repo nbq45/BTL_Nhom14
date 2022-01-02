@@ -509,11 +509,13 @@
                         </div>
                         <!-- Modal footer -->
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-info btn-lg" href="order_food.html" data-bs-toggle="modal" data-bs-target="#incoming-order">
-                            <div class="row">
-                              <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
-                              <div class="col-md-3"><span class="total-price">0đ</span></div>
-                            </div>
+                          <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#incoming-order">
+                            <a href="order_food.php" class="text-decoration-none" style="color: #FFF;">
+                              <div class="row">
+                                <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
+                                <div class="col-md-3"><span class="total-price">0đ</span></div>
+                              </div>
+                            </a>
                           </button>
                         </div>
                       </div>
