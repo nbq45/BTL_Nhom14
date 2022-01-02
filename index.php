@@ -1,6 +1,19 @@
-<?php
-  include("template/header.php");
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <title>Đặt đồ ăn trực tuyến Ở 16 tỉnh thành trên Toàn Quốc & Giao hàng tận nơi | Đặt món & giao ship tận nơi | shopeefood.vn</title>
+</head>
+
+<body>
+    <!-- header -->
     <header class="container-fluid fixed-top shopeefood__header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid mt-1">
@@ -134,160 +147,181 @@
                         <h4 class="ms-3">Ưu Đãi</h4>
                         <div class="overflow-auto h-20 restaurant__list bg-white">
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="restaurant">
-                                <div class="restaurant__cover">
-                                    <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                        alt="">
-                                </div>
-                                <div class="restaurant__details">
-                                    <div class="restaurant__title">
-                                        <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                <a href="food_detail.php" class="text-decoration-none">
+                                    <div class="restaurant__cover">
+                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
+                                            alt="">
                                     </div>
-                                    <div class="restaurant__location">
-                                        <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                    <div class="restaurant__details">
+                                        <div class="restaurant__title">
+                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
+                                        </div>
+                                        <div class="restaurant__location">
+                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="restaurants__collection bg-white rounded mt-3">
