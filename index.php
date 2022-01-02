@@ -46,9 +46,19 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">Đồ Ăn</a>
                             <a class="nav-link" href="index_hcm.php">Đồ Ăn</a>
+                        </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Thực Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Siêu Thị</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Thuốc</a>
