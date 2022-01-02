@@ -1,4 +1,3 @@
-<<<<<<< HEAD:food_detail.php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -589,7 +588,6 @@
 ></script>
 </body>
 </html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1180,4 +1178,3 @@
 ></script>
 </body>
 </html>
->>>>>>> 39d17aff0760f7d25f615c3578c2f7498b48802f:food_detail.html
