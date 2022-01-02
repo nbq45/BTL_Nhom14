@@ -110,14 +110,17 @@
                     <hr style="color: #959595; width: 600px" >
                     <div class="utility">
                       <div class="row">
-                        <div class="col-md-3">
-                            <h1 style="color: #959595; font-size: 13px;">Phí dịch vụ</h1>
-                            <p class="text-bold ">0.0% Phí phục vụ</p>
+                        <div class="col-md-4">
+                            <div class="utility-content container">
+                              <h6 style="color: #959595;">Phí dịch vụ</h6>
+                              <h6 class="text ">0.0% Phí phục vụ</h6>
+                              <span class="icon-partner-vi"></span>
+                            </div>
                         </div>
                         <br>
                         <div class="col-md">
-                            <h1 style="color: #959595; font-size: 13px;">Dịch vụ bởi</h1>
-                            <p class="text-bold ">ShopeeFood</p>
+                            <h6 style="color: #959595;">Dịch vụ bởi</h6>
+                            <h6 class="text ">ShopeeFood</h6>
                         </div>
                     </div>
                     </div>

@@ -64,9 +64,21 @@ body{
     color: #fff;
     margin: 0 5px;
 }
-.utility .text-bold{
+.utility .text{
     color: #ee4d2d;
     font-weight: 600;
+}
+.utility-content{
+    border-right: 1px solid #ebebeb;
+}
+.icon-partner-vi {
+    background-image: url(https://shopeefood.vn/app/assets/img/partner-vi.png?dec00ea8fc6f5429f18e83d16c3685f8);
+    position: absolute;
+    top: 265px;
+    left: 818px;
+    cursor: pointer;
+    width: 116px;
+    height: 44px;
 }
 .main-footer{
     width: 100%;
