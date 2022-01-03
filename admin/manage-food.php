@@ -3,7 +3,7 @@
     <div class="container">
         <h5 class="text-center text-primary mt-5">DANH SÁCH SẢN PHẨM</h5>
         <div>
-            <a class="btn btn-primary" href="add_food.php">Thêm</a>
+            <a class="btn btn-primary" href="add-food.php">Thêm</a>
         </div>
         <table class="table">
             <thead>
@@ -34,8 +34,8 @@
                             <td><?php echo $row['ten_sp']; ?></td>
                             <td><?php echo $row['gia']; ?></td>
                             <td><?php echo $row['giamgia']; ?></td>
-                            <td><a href="update_food.php?id=<?php echo $row['ma_sp']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                            <td><a href="delete_food.php?id=<?php echo $row['ma_sp']; ?>"><i class="bi bi-trash"></i></a></td>
+                            <td><a href="update-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-pencil-square"></i></a></td>
+                            <td><a href="delete-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-trash"></i></a></td>
                         </tr>
                 <?php
                     }
