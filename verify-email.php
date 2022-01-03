@@ -15,7 +15,7 @@
         require "db.php";
         $email = $_GET['key'];
         $token = $_GET['token'];
-        $sql =  "SELECT * FROM `khachhang` WHERE `email_verification_link`='" . $token . "' and `email`='" . $email . "'";
+        $sql =  "SELECT * FROM `khachhang` WHERE `email_verification_link`='$token' and `email`='$email'";
         $query = mysqli_query($conn,$sql);
         $d = date('Y-m-d H:i:s');//tạo ra 1 biến lưu thời gian
         if (mysqli_num_rows($query) > 0) {//có bản ghi nào trong csdl khớp vs thông tin này ko
@@ -37,7 +37,7 @@
     <div class="container mt-3">
         <div class="card">
             <div class="card-header text-center">
-                User Account Activation by Email Verification using PHP
+                Xác nhận gmail
             </div>
             <div class="card-body">
                 <p><?php echo $msg; ?></p>
