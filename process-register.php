@@ -12,17 +12,17 @@ if(isset($_POST['btnRegister']) && $_POST['email'])
         //lưu lại thông tin đăng ký
         $name = $_POST['name'];
         $email = $_POST['email'];
-        $password = $_POST['password'];
+        $password = password_hash($_POST['password'],PASSWORD_DEFAULT);
         $address = $_POST['address'];
         $phone = $_POST['phone'];
-        $sql = "INSERT INTO khachhang(name, email, email_verification_link ,password, address, phone) VALUES('$name','$email','$password','$address','$phone')";
+        $sql = "INSERT INTO khachhang(name, email, email_verification_link ,password, address, phone) VALUES('$name','$email','$token','$password','$address','$phone')";
         mysqli_query($conn, $sql);
         //sau khi lưu xong, cần gửi tới mail đăng ký 1 đg link tới website
         //yêu cầu người dùng nhấp để kích hoạt; biến link sẽ gửi vào email
         $link = "<a href='http://BTL_NHOM14/verify-email.php?key=".$email."&token=".$token."'>Nhấp vào đây để kích hoạt</a>";
         //quá trình gửi email
-        include("send_mail.php");
-        if(sendEmailForAccountActive($email, $link)){
+        include "send_mail.php";
+        if(sendEmailForAccountActive($email,$link)){
             echo "Vui lòng kiểm tra Email của bạn để kích hoạt tài khoản";
         }else{
             echo "Xin lỗi, Email chưa được gửi đi. Vui lòng kiểm tra lại thông tin đăng ký tài khoản";

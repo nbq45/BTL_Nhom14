@@ -1,19 +1,19 @@
 <?php
-$username = 'nbqvevo@gmail.com';
-$password = 'uwyp dgaf hqzq qoxp';
+$username = 'vucaominhduc@gmail.com';
+$password = 'fdtmocbbngntrsgd';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Load Composer's autoloader
-require 'phpmailer/Exception.php';
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
 
 
 
-function sendEmailForAccountActive($email, $link) {
+function sendEmailForAccountActive($email,$link) {
     global $username;
     global $password;
     //Create an instance; passing `true` enables exceptions
@@ -32,7 +32,7 @@ function sendEmailForAccountActive($email, $link) {
         $mail->CharSet = "UTF-8";                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     
         //Recipients
-        $mail->setFrom('nbqvevo@gmail.com');
+        $mail->setFrom('vucaominhduc@gmail.com');
         // $mail->addAddress('', 'Joe User');     //Add a recipient
         $mail->addAddress('$email');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
@@ -46,11 +46,13 @@ function sendEmailForAccountActive($email, $link) {
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = '[Shopee_food] verify your account';
-        $mail->Body    = 'Mã sinh viên: 1951060963 - Họ tên: Nguyễn Bảo Quốc'.$link;
+        $mail->Body    = 'Chào mừng bạn đến với Shopee Food. Để kích hoạt tài khoản, vui lòng nhấp vào đường link'.$link;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
-        $mail->send();
-        echo 'Message has been sent';
+        if($mail->send());{
+            return true;
+        }
+        
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
