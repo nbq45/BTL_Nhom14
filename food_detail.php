@@ -177,7 +177,7 @@
                             </div>
                             <div id="section2" > 
                               <div class="col-md text-muted" style="font-size:large;">CÀ PHÊ</div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/bac-xiu.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -185,14 +185,13 @@
                                 <h1 class="text text-right" >Bạc xỉu</h1>
                                 </div>
                                 <div class="col-sm-auto">
-                                    <h2 class="text text-right" style="color: #0288d1;"><span>35,000</span><sup>đ</sup>
-                                    </h2>
+                                    <h2 class="text text-right" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></h2>
                                 </div>
                                 <div class="col-sm-auto">
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/cafe-den.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -206,7 +205,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/cafe-nau.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -220,7 +219,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/capuchino.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -237,7 +236,7 @@
                             </div> 
                             <div id="section3">
                               <div class="col-md text-muted" style="font-size:large;">TRÀ</div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/tra-dao-cam-sa.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -251,7 +250,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/tra-chanh.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -265,7 +264,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/hong-tra-sua.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -282,7 +281,7 @@
                             </div>
                             <div id="section4">
                               <div class="col-md text-muted" style="font-size:large;">ĐỒ UỐNG KHÁC</div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/sua-chua-da.jfif" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -296,7 +295,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/sua-chua-cacao.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -310,7 +309,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/sua-chua-cafe.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -327,7 +326,7 @@
                             </div>
                             <div id="section5">
                               <div class="col-md text-muted" style="font-size:large;">ĐỒ ĂN VẶT</div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/banh-quy.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -341,7 +340,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/banh-quy-socola.jpg" width="60px" style="margin: 5px;"></a>
                                 </div>
@@ -355,7 +354,7 @@
                                   <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                 </div>
                               </div>
-                              <div class="row produce-item">
+                              <div class="row product-item">
                                 <div class="col-sm-auto">
                                   <a href=""><img src="assets/img/huong-duong.jpg" width="50px" style="margin: 5px;"></a>
                                 </div>
@@ -385,7 +384,7 @@
                           <button type="button" class="btn btn-secondary btn-sm" style="color: lightblue; background-color:#ebebeb;font-size: 10px;">1 phần - 1 người</button>
                         </div>
                         <div class="order me-2">
-                          <button type="button" class="btn btn-primary btn-sm" style="background-color: #187caa;">Đặt theo nhóm</button>
+                          <button type="button" class="btn btn-info btn-sm" style="background-color: #187caa;color:#FFF">Đặt theo nhóm</button>
                         </div>
                         <div class="detele">
                           <button type="button" class="btn btn-outline-danger btn-sm">xóa</button>
@@ -406,8 +405,8 @@
                           </div>
                         </div>
                       </div>
-                      <section class="order-card-groups">
-                        <div class="card-item">
+                      <section class="cart order-card-groups">
+                        <!-- <div class="card-item">
                           <div class="clearfix">
                               <button class="bi bi-plus"></button>
                               <span class="number-order">1</span>
@@ -418,14 +417,14 @@
                             <input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;">
                             <span class="price-order">35,000<sup>đ</sup></span>
                           </div>
-                        </div>
+                        </div> -->
                       </section>
                   </div>
                   <div class="bill-2" style="flex-grow: 1;max-width: 100%;background-color: #ebebeb;">
                     <div class="row">
                       <div class="col">Cộng</div>
                       <div class="col-auto">
-                      <span class="price-order">35,000 <sup>đ</sup></span>
+                      <span class="price-total"><span>35,000</span><sup>đ</sup></span>
                       </div>
                     </div>
                   </div>
@@ -436,7 +435,7 @@
                     <div class="row">
                       <div class="col">Tổng cộng</div>
                       <div class="col-auto">
-                        <span class="price-order" style="color: #0288d1;">35,000 <sup>đ</sup></span>
+                        <span class="price-total" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></span>
                       </div>
                     </div>
                   </div>
@@ -496,22 +495,22 @@
                                   <div class="col">Tổng cộng 
                                     <span class="txt-bold">0</span> phần
                                   </div>
-                                  <div class="col-auto txt-bold">0<span class="format-price">đ</span>
+                                  <div class="col-auto txt-bold"><span>0</span><sup>đ</sup>
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col">
                                     Phí dịch vụ: 
-                                    <i class="bi bi-question-circle"></i>
+                                    <i class="bi bi-question-circle"><span>4,000</span><sup>đ</sup></i>
                                   </div>
-                                  <div class="col-auto">0<span class="format-price">đ</span>
+                                  <div class="col-auto"><span>0</span><sup>đ</sup>
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="col">Phí vận chuyển: <span style="color: red;">2.0 km</span>
                                       <i class="bi bi-question-circle"></i>
                                   </div>
-                                  <div class="col-auto">0<span class="format-price">đ</span>
+                                  <div class="col-auto"><span>0</span><sup>đ</sup>
                                   </div>
                                 </div>
                               </div>
@@ -525,7 +524,7 @@
                                       </label>
                                     </div>
                                     <div class="col-auto">
-                                      <p class="text-bold text-blue font16">5,000đ</p>
+                                      <p class="text-bold text-blue font16"><span>5,000</span><sup>đ</sup></p>
                                     </div>
                                   </div>
                                 </div>
@@ -534,7 +533,7 @@
                                 <div class="row">
                                   <div class="col">Tổng cộng</div>
                                   <div class="col-auto">
-                                    <p class="text-bold text-blue font16">0đ</p>
+                                    <p class="text-bold text-blue font16"><span>0</span><sup>đ</sup></p>
                                   </div>
                                 </div>
                               </div>
@@ -629,5 +628,6 @@
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
   crossorigin="anonymous"
 ></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
