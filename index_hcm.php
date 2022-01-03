@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown pe-5 ">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="index_hcm.php" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 TP. HCM
                             </a>
@@ -521,8 +521,8 @@
                     <div class="col-md">
                       <p class="font-weight-bold">Ứng dụng ShopeeFood</p>
                       <div class="footer-img">
-                        <h2><a href="" ><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
-                        <h2><a href="" ><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
+                        <h2><a href="https://apps.apple.com/us/app/deliverynow/id1137866760" ><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
+                        <h2><a href="https://play.google.com/store/apps/details?id=com.deliverynow" ><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
                         <h2><a href="" ><img src="assets/img/Huawei-gallery-vn.jpg" width="100px"></a></h2>
                       </div>
                     </div>
