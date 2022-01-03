@@ -140,12 +140,14 @@ body{
     float: right;
 }
 .category-right .btn-primary{
-    margin-left: 10px;
-    font-size: 20px;
     border: none;
     cursor: pointer;
-    font-weight: 700;
     background-color: #ee4d2d;
+}
+.category-right .produce-item{
+    padding-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
 }
 .bill-restaurant{
     background-color: #fff;
@@ -159,15 +161,35 @@ body{
     border-bottom: 1px solid #ebebeb;
     padding: 7px 10px;
 }
+.order-card-user{
+    color: #464646;
+    background-color: #ebebeb;
+    padding: 4px 15px;
+}
+.card-item .clearfix .bi-plus{
+    background: rgb(26, 180, 26);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.card-item .clearfix .bi-dash{
+    background: #464646;
+    color: #fff;
+    border: none;
+    margin: 2px;
+    border-radius: 4px;
+}
+.card-item .note-order{
+    border: none;
+}
 .btn-group .btn{
     font-size: 12px;
     padding: 2px 8px;
     border-radius: 4px;
 }
-.bill-3{
+.bill-3 {
     font-size: 13px;
     padding: 4px 10px;
-    background-color: #ebebeb;
 }
 .btn-danger{
     background: #ee4d2d;
