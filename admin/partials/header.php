@@ -33,11 +33,12 @@
                     <li class="nav-item">
                     <a class="nav-link" href="manage-food.php">Food</a>
                     </li>
+                    
                     <li class="nav-item">
                     <a class="nav-link" href="manage-order.php">Order</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="manage-admin.php">Admin</a>
+                    <a class="nav-link" href="#">Users</a>
                     </li>
                     <?php
                         if(isset($_SESSION['user']))
