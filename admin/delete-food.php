@@ -33,8 +33,6 @@
             header('location:'.SITEURL.'admin/manage-food.php');
         }
 
-        
-
     }
     else
     {

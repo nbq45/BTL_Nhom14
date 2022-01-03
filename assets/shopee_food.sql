@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2022 at 05:21 AM
+-- Generation Time: Jan 03, 2022 at 02:08 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -29,9 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `db_admin` (
   `ma_ad` int(10) UNSIGNED NOT NULL,
-  `ho_ten` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tendangnhap` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `mat_khau` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -42,7 +41,6 @@ CREATE TABLE `db_admin` (
 
 CREATE TABLE `donhang` (
   `ma_dh` int(10) UNSIGNED NOT NULL,
-  `trang_thai` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tongtien` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `so_luong` int(50) UNSIGNED NOT NULL,
   `ngay_dat` date NOT NULL,
@@ -50,7 +48,8 @@ CREATE TABLE `donhang` (
   `thoi_gian_giao` datetime DEFAULT NULL,
   `noi_giao_hang` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `ma_gd` int(10) UNSIGNED NOT NULL,
-  `ma_sp` int(10) UNSIGNED NOT NULL
+  `ma_sp` int(10) UNSIGNED NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -61,13 +60,13 @@ CREATE TABLE `donhang` (
 
 CREATE TABLE `giaodich` (
   `ma_gd` int(10) UNSIGNED NOT NULL,
-  `trang_thai` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tongtien` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `tu_ngay` date NOT NULL,
   `den_ngay` date NOT NULL,
   `thoi_gian` datetime DEFAULT NULL,
   `ma_kh` int(10) UNSIGNED NOT NULL,
-  `ma_ad` int(10) UNSIGNED NOT NULL
+  `ma_ad` int(10) UNSIGNED NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -78,12 +77,32 @@ CREATE TABLE `giaodich` (
 
 CREATE TABLE `khachhang` (
   `ma_kh` int(10) UNSIGNED NOT NULL,
-  `ho_ten` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tendn_kh` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `mat_khau_kh` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `diachi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `sdt` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email_verification_link` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `status` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `khachhang`
+--
+
+INSERT INTO `khachhang` (`ma_kh`, `name`, `password`, `email`, `address`, `phone`, `email_verification_link`, `email_verified_at`, `status`) VALUES
+(10, 'minh duc', '$2y$10$qAcaGhZKsrW533Q2h407UumR5/AkdQLSMf7DXkYki5dmwsf/uKoWu', 'vucaominhduc@gmail.com', 'Số 27, ngách 293/32, ngõ 319 Tam Trinh', '0345825487', '3b3d76e3ea83c4702082fdb9e58d26668542', '2022-01-03 06:36:27', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `loaisanpham`
+--
+
+CREATE TABLE `loaisanpham` (
+  `ma_loaisp` int(11) UNSIGNED NOT NULL,
+  `ten_loaisp` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -96,7 +115,8 @@ CREATE TABLE `sanpham` (
   `ma_sp` int(10) UNSIGNED NOT NULL,
   `ten_sp` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `gia` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `giamgia` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL
+  `giamgia` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ma_loaisp` int(11) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -129,13 +149,21 @@ ALTER TABLE `giaodich`
 -- Indexes for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  ADD PRIMARY KEY (`ma_kh`);
+  ADD PRIMARY KEY (`ma_kh`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `loaisanpham`
+--
+ALTER TABLE `loaisanpham`
+  ADD PRIMARY KEY (`ma_loaisp`);
 
 --
 -- Indexes for table `sanpham`
 --
 ALTER TABLE `sanpham`
-  ADD PRIMARY KEY (`ma_sp`);
+  ADD PRIMARY KEY (`ma_sp`),
+  ADD KEY `ma_loaisp` (`ma_loaisp`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -163,7 +191,13 @@ ALTER TABLE `giaodich`
 -- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `ma_kh` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `ma_kh` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `loaisanpham`
+--
+ALTER TABLE `loaisanpham`
+  MODIFY `ma_loaisp` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `sanpham`
@@ -188,6 +222,12 @@ ALTER TABLE `donhang`
 ALTER TABLE `giaodich`
   ADD CONSTRAINT `giaodich_ibfk_1` FOREIGN KEY (`ma_kh`) REFERENCES `khachhang` (`ma_kh`),
   ADD CONSTRAINT `giaodich_ibfk_2` FOREIGN KEY (`ma_ad`) REFERENCES `db_admin` (`ma_ad`);
+
+--
+-- Constraints for table `sanpham`
+--
+ALTER TABLE `sanpham`
+  ADD CONSTRAINT `sanpham_ibfk_1` FOREIGN KEY (`ma_loaisp`) REFERENCES `loaisanpham` (`ma_loaisp`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -21,7 +21,7 @@ function sendEmailForAccountActive($email,$link) {
 
     try {
         //Server settings
-        $mail->SMTPDebug = 1;                      //Enable verbose debug output
+        $mail->SMTPDebug = 0;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -34,7 +34,7 @@ function sendEmailForAccountActive($email,$link) {
         //Recipients
         $mail->setFrom('vucaominhduc@gmail.com');
         // $mail->addAddress('', 'Joe User');     //Add a recipient
-        $mail->addAddress('$email');               //Name is optional
+        $mail->addAddress($email);               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
