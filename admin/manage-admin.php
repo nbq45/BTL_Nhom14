@@ -32,8 +32,8 @@
                             <th scope="row"><?php echo $row['ma_ad']; ?></th>
                             <td><?php echo $row['name']; ?></td>
                             <td>
-                                <a href="update_admin.php?id=<?php echo $row['ma_ad']; ?>" class="btn btn-primary">Cập Nhật</a>
-                                <a href="delete_admin.php?id=<?php echo $row['ma_ad']; ?>" class="btn btn-danger">Xóa</a>
+                                <a href="update-admin.php?ma_ad=<?php echo $row['ma_ad']; ?>" class="btn btn-primary">Cập Nhật</a>
+                                <a href="delete-admin.php?ma_ad=<?php echo $row['ma_ad']; ?>" class="btn btn-danger">Xóa</a>
                             </td>
                         </tr>
                 <?php
