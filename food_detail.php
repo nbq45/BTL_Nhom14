@@ -194,7 +194,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -208,7 +208,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -222,7 +222,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -236,7 +236,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -253,7 +253,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -267,7 +267,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -281,7 +281,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -298,7 +298,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -312,7 +312,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -326,7 +326,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -343,7 +343,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -357,7 +357,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -371,7 +371,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -389,7 +389,7 @@
                                 <div class="bill-header">
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <div class="cart me-2">
-                                            <button type="button" class="btn btn-secondary btn-sm" style="color: lightblue; background-color:#ebebeb;font-size: 10px;">1 phần - 1 người</button>
+                                            <button type="button" class="btn btn-secondary btn-sm" style="color: lightblue; background-color:#ebebeb;font-size: 10px;"><span class="number-order">0 </span>phần - 1 người</button>
                                         </div>
                                         <div class="order me-2">
                                             <button type="button" class="btn btn-info btn-sm" style="background-color: #187caa;color:#FFF">Đặt theo nhóm</button>
@@ -409,23 +409,23 @@
                                                 <div class="user-name">Nguyễn Văn A</div>
                                             </div>
                                             <div class="col-auto">
-                                                1 món
+                                            <span class="number-order">0 </span>món
                                             </div>
                                         </div>
                                     </div>
                                     <section class="cart order-card-groups">
                                         <div class="card-item">
-                          <div class="clearfix">
-                              <button class="bi bi-plus"></button>
-                              <span class="number-order">1</span>
-                              <button class="bi bi-dash"></button>
-                              <span class="name-order">Bạc xỉu</span>
-                          </div>
-                          <div class="note-order">
-                            <input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;">
-                            <span class="price-order">35,000<sup>đ</sup></span>
-                          </div>
-                        </div>
+                                    <div class="clearfix">
+                                        <button class="bi bi-plus"></button>
+                                        <span class="number-order">0</span>
+                                        <button class="bi bi-dash"></button>
+                                        <span class="name-order">Bạc xỉu</span>
+                                    </div>
+                                    <div class="note-order">
+                                        <!-- <input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;">
+                                        <span class="price-order">35,000<sup>đ</sup></span>
+                                    </div> -->
+                                    </div>
                                     </section>
                                 </div>
                                 <div class="bill-2" style="flex-grow: 1;max-width: 100%;background-color: #ebebeb;">
@@ -529,8 +529,8 @@
                                                                     <div class="col">
                                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                                                         <label class="form-check-label" for="flexCheckDefault">
-                                        Giao tận tay
-                                      </label>
+                                                                            Giao tận tay
+                                                                        </label>
                                                                     </div>
                                                                     <div class="col-auto">
                                                                         <p class="text-bold text-blue font16"><span>5,000</span><sup>đ</sup></p>
@@ -639,10 +639,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script>
-        console.log(createId());
-    </script>
-    <script src="assets/js/food_detail.js"></script>
+    
+    <script src="assets/js/btnadding.js"></script>
 </body>
 
 </html>

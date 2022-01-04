@@ -1,4 +1,4 @@
-const btn = document.querySelectorAll("menu_category category-right btn-primary")
+const btn = document.querySelector(".menu_category .category-right .btn-primary")
     //console.log(btn)
 btn.forEach(function(button, index) {
     button.addEventListerner("click", function(event) {
@@ -14,8 +14,8 @@ btn.forEach(function(button, index) {
 })
 
 function addcart(productName, productPrice) {
-    var addtr = document.createElement("order-card-groups")
-    var cardItem = document.querySelectorAll("order-card-groups card-item")
+    var addtr = document.createElement(".order-card-groups")
+    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
     for (var i = 0; i < cardItem.length; i++) {
         var productT = document.querySelectorAll(".title")
         if (productT[i].innerHTML == productName) {
@@ -25,14 +25,14 @@ function addcart(productName, productPrice) {
     }
     var trcontent = '<div class="card-item"><div class="clearfix"><button class="bi bi-plus"></button><span class="number-order">1</span><button class="bi bi-dash"></button><span class="name-order"><span class="title">' + productName + '</span></div><div class="note-order"><input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;"><span class="price-order"><span class="price">' + productPrice + '</span><sup>đ</sup></span></div></div>'
     addtr.innerHTML = trcontent
-    var cartTable = document.querySelector("card-item")
+    var cartTable = document.querySelector(".card-item")
     cartTable.append(addtr)
     carttotal()
     deleteCard()
 }
 // ------------------------ Total price ---------------------------
 function carttotal() {
-    var cardItem = document.querySelectorAll("order-card-groups card-item")
+    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
     var totalC = 0
     for (var i = 0; i < cardItem.length; i++) {
         var inputValue = cardItem[i].querySelector("input").value
@@ -48,7 +48,7 @@ function carttotal() {
 }
 // ------------------------- DELETE CARD --------------------------
 function deleteCard() {
-    var cardItem = document.querySelectorAll("order-card-groups card-item")
+    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
     for (var i = 0; i < cardItem.length; i++) {
         var productT = document.querySelectorAll(".bi-dash")
         productT[i].addEventListener("click", function(event) {
@@ -62,7 +62,7 @@ function deleteCard() {
 }
 
 function inputchange() {
-    var cardItem = document.querySelectorAll("order-card-groups card-item")
+    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
     for (var i = 0; i < cardItem.length; i++) {
         var productT = document.querySelectorAll(".bi-dash")
         productT[i].addEventListener("click", function(event) {
