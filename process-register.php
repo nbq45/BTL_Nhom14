@@ -33,3 +33,4 @@ if(isset($_POST['btnRegister']) && $_POST['email'])
         echo "Bạn đã đăng ký thành công. Vui lòng xác nhận Email của bạn.";
     }
 }
+?>
