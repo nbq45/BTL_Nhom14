@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="assets/css/food_detail.css">
     <link href="login.html">
     <title>ShopeeFood</title>
-    
-    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -196,7 +194,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -210,7 +208,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -224,7 +222,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -238,7 +236,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -255,7 +253,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -269,7 +267,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -283,7 +281,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -300,7 +298,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -314,7 +312,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -328,7 +326,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -345,7 +343,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -359,7 +357,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
@@ -373,7 +371,7 @@
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button onclick="onClickDuaVanPhamVaoDonHang()" type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
+                                                                <button type="button" class="btn btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
