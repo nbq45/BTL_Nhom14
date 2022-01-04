@@ -320,7 +320,7 @@
                                                                 <a href=""><img src="assets/img/sua-chua-cafe.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
-                                                                <h1 class="text text-right">sữa chua cafe</h1>
+                                                                <h1 class="text text-right">Sữa chua cafe</h1>
                                                             </div>
                                                             <div class="col-sm-auto">
                                                                 <h2 class="text text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
@@ -413,26 +413,28 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <section class="cart order-card-groups">
+                                    <div class="order-card-groups">
                                         <div class="card-item">
-                                    <div class="clearfix">
-                                        <button class="bi bi-plus"></button>
-                                        <span class="number-order">0</span>
-                                        <button class="bi bi-dash"></button>
-                                        <span class="name-order">Bạc xỉu</span>
+                                            <div class="clearfix">
+                                                <button class="bi bi-plus"></button>
+                                                <span class="number-order">0</span>
+                                                <button class="bi bi-dash"></button>
+                                                <span class="name-order"></span>
+                                            </div>
+                                            <div class="note-order">
+                                                <div class="row">
+                                                    <div class="col"><input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;"></div>
+                                                    <div class="col-auto"><span class="price-order">0<sup>đ</sup></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="note-order">
-                                        <!-- <input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;">
-                                        <span class="price-order">35,000<sup>đ</sup></span>
-                                    </div> -->
-                                    </div>
-                                    </section>
                                 </div>
                                 <div class="bill-2" style="flex-grow: 1;max-width: 100%;background-color: #ebebeb;">
                                     <div class="row">
                                         <div class="col">Cộng</div>
                                         <div class="col-auto">
-                                            <span class="price-total"><span>35,000</span><sup>đ</sup></span>
+                                            <span class="price-total"><span>0</span><sup>đ</sup></span>
                                         </div>
                                     </div>
                                 </div>
@@ -443,13 +445,13 @@
                                     <div class="row">
                                         <div class="col">Tổng cộng</div>
                                         <div class="col-auto">
-                                            <span class="price-total" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></span>
+                                            <span class="price-total" style="color: #0288d1;"><span>0</span><sup>đ</sup></span>
                                         </div>
                                     </div>
                                 </div>
                                 <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#orderbill">
-                    <i class="bi bi-check-circle-fill"></i> Đặt trước
-                  </button>
+                                    <i class="bi bi-check-circle-fill"></i> Đặt trước
+                                </button>
                                 <!-- The Modal -->
                                 <div class="modal  order-detail" id="orderbill">
                                     <div class="modal-dialog modal-lg">
