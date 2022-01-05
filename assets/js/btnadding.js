@@ -18,12 +18,6 @@ let products = [{
         inCart: 0
     },
     {
-        name: 'Cà phê đen',
-        tag: 'Cà phê đen',
-        price: 35,
-        inCart: 0
-    },
-    {
         name: 'Capuchino',
         tag: 'Capuchino',
         price: 40,
@@ -93,7 +87,8 @@ let products = [{
 for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', () => {
         cartNumbers(products[i]);
-        totalCost(products[i])
+        totalCost(products[i]);
+        deleteCard()
     })
 }
 
@@ -104,6 +99,12 @@ function onLoadCartNumbers() {
     }
     if (productNumbers) {
         document.querySelector('.order-card-user .number-order').textContent = productNumbers;
+    }
+    if (productNumbers) {
+        document.querySelector('.clearfix .number-order').textContent = productNumbers;
+    }
+    if (productNumbers) {
+        document.querySelector('.info-order .total').textContent = productNumbers;
     }
 }
 
@@ -123,6 +124,20 @@ function cartNumbers(product) {
     } else {
         localStorage.setItem('cartNumbers', 1);
         document.querySelector('.order-card-user .number-order').textContent = 1;
+    }
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.clearfix .number-order').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.clearfix .number-order').textContent = 1;
+    }
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.info-order .total').textContent = productNumbers + 1;
+    } else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.info-order .total').textContent = 1;
     }
     setItems(product);
 }
@@ -148,23 +163,20 @@ function setItems(product) {
 }
 
 function totalCost(product) {
-    //console.log("the product price is", product.price);
     let cartCost = localStorage.getItem('totalCost');
-    console.log("My cartCost is", cartCost);
-    console.log(typeof cartCost);
-
-    if (cartCost != null) {
-        cartCost = parseInt(cartCost);
-        localStorage.setItem("totalCost", cartCost + products.price);
+    if (cartCost === null) {
+        localStorage.setItem('totalCost', product.price);
     } else {
-        localStorage.setItem("totalCost", product.price);
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost', cartCost + product.price);
     }
 }
 
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItem);
-    let productContainer = document.querySelector('.bill-restaurant .order-card-groups');
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector('.order-card-groups');
+    let cartCost = localStorage.getItem('totalCost');
     console.log(cartItems);
     if (cartItems && productContainer) {
         productContainer.innerHTML = '';
@@ -180,15 +192,53 @@ function displayCart() {
                 <div class="note-order">
                     <div class="row">
                         <div class="col"><input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;"></div>
-                        <div class="col-auto"><span class="price-order">${item.price}<sup>đ</sup></span></div>
+                        <div class="col-auto"><span class="price-order">${item.inCart * item.price},000<sup>đ</sup></span></div>
                     </div>
                 </div>
             </div>
-            `
+            `;
         });
-
+        let productPrice = document.querySelector('.price-total');
+        productPrice.innerHTML += `${cartCost},000<sup>đ</sup>`
+        let productTotalPrice = document.querySelector('.total-price .price-total');
+        productTotalPrice.innerHTML += `${cartCost},000<sup>đ</sup>`
     }
-
+    let productOrder = document.querySelector('.order-list');
+    if (cartItems && productOrder) {
+        productOrder.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productOrder.innerHTML += `
+                <div class="row">
+                    <div class="col">
+                        <span class="order-item-number">${item.inCart}</span>
+                        <span class="name-order">${item.name}</span>
+                    </div>
+                    <div class="col-auto">
+                        <span class="price text-right">${item.inCart * item.price},000<sup>đ</sup></span>
+                    </div>
+                </div>
+            `;
+        });
+        let productPriceOrder = document.querySelector('.info-order .price-order');
+        productPriceOrder.innerHTML += `${cartCost},000<sup>đ</sup>`
+        let productFinalPrice = document.querySelector('.final-price-order .final-price');
+        productFinalPrice.innerHTML += `${cartCost},000<sup>đ</sup>`
+    }
 }
 
+
+function deleteCard() {
+    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
+    for (var i = 0; i < cardItem.length; i++) {
+        var productT = document.querySelectorAll(".bi-dash")
+        productT[i].addEventListener("click", function(event) {
+            var cartDelete = event.target
+            var cartitemR = cartDelete.parentElement
+            cartitemR.remove()
+            carttotal()
+                // console.log(cartitemR)
+        })
+    }
+}
 onLoadCartNumbers();
+displayCart();

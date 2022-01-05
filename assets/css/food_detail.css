@@ -239,6 +239,21 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+.order-item-number {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    margin-right: 5px;
+    top: 10 px;
+    left: 10 px;
+    width: 15 px;
+    height: 15 px;
+    background-color: #0288d1;
+    line-height: 14px;
+    border-radius: 4 px;
+    padding-top: 1 px;
+}
+
 .modal-header .btn-primary {
     margin-left: 500px;
     font-size: 12px;

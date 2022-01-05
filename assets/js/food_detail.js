@@ -1,76 +1,87 @@
-const btn = document.querySelector(".menu_category .category-right .btn-primary")
-    //console.log(btn)
-btn.forEach(function(button, index) {
-    button.addEventListerner("click", function(event) {
-        {
-            var btnItem = event.target
-            var product = btnItem.parentElement
-            var productName = product.querySelector("H1").innerText
-            var productPrice = product.querySelector("H2").innerText
-            addcart(productName, productPrice)
+var check = false;
+
+function changeVal(el) {
+    var qt = parseFloat(el.parent().children(".qt").html());
+    var price = parseFloat(el.parent().children(".price").html());
+    var eq = Math.round(price * qt * 100) / 100;
+
+    el.parent().children(".full-price").html(eq + "€");
+
+    changeTotal();
+}
+
+function changeTotal() {
+
+    var price = 0;
+
+    $(".full-price").each(function(index) {
+        price += parseFloat($(".full-price").eq(index).html());
+    });
+
+    price = Math.round(price * 100) / 100;
+    var tax = Math.round(price * 0.05 * 100) / 100
+    var shipping = parseFloat($(".shipping span").html());
+    var fullPrice = Math.round((price + tax + shipping) * 100) / 100;
+
+    if (price == 0) {
+        fullPrice = 0;
+    }
+
+    $(".subtotal span").html(price);
+    $(".tax span").html(tax);
+    $(".total span").html(fullPrice);
+}
+
+$(document).ready(function() {
+
+    $(".remove").click(function() {
+        var el = $(this);
+        el.parent().parent().addClass("removed");
+        window.setTimeout(
+            function() {
+                el.parent().parent().slideUp('fast', function() {
+                    el.parent().parent().remove();
+                    if ($(".product").length == 0) {
+                        if (check) {
+                            $("#cart").html("<h1>The shop does not function, yet!</h1><p>If you liked my shopping cart, please take a second and heart this Pen on <a href='https://codepen.io/ziga-miklic/pen/xhpob'>CodePen</a>. Thank you!</p>");
+                        } else {
+                            $("#cart").html("<h1>No products!</h1>");
+                        }
+                    }
+                    changeTotal();
+                });
+            }, 200);
+    });
+
+    $(".qt-plus").click(function() {
+        $(this).parent().children(".qt").html(parseInt($(this).parent().children(".qt").html()) + 1);
+
+        $(this).parent().children(".full-price").addClass("added");
+
+        var el = $(this);
+        window.setTimeout(function() { el.parent().children(".full-price").removeClass("added");
+            changeVal(el); }, 150);
+    });
+
+    $(".qt-minus").click(function() {
+
+        child = $(this).parent().children(".qt");
+
+        if (parseInt(child.html()) > 1) {
+            child.html(parseInt(child.html()) - 1);
         }
-    })
 
-})
+        $(this).parent().children(".full-price").addClass("minused");
 
-function addcart(productName, productPrice) {
-    var addtr = document.createElement(".order-card-groups")
-    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
-    for (var i = 0; i < cardItem.length; i++) {
-        var productT = document.querySelectorAll(".title")
-        if (productT[i].innerHTML == productName) {
-            alert("Sản phẩm cuart bạn đã ở trong giỏ hàng")
-            return
-        }
-    }
-    var trcontent = '<div class="card-item"><div class="clearfix"><button class="bi bi-plus"></button><span class="number-order">1</span><button class="bi bi-dash"></button><span class="name-order"><span class="title">' + productName + '</span></div><div class="note-order"><input type="text" id="textNote" placeholder="Thêm ghi chú..." style="border: none;"><span class="price-order"><span class="price">' + productPrice + '</span><sup>đ</sup></span></div></div>'
-    addtr.innerHTML = trcontent
-    var cartTable = document.querySelector(".card-item")
-    cartTable.append(addtr)
-    carttotal()
-    deleteCard()
-}
-// ------------------------ Total price ---------------------------
-function carttotal() {
-    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
-    var totalC = 0
-    for (var i = 0; i < cardItem.length; i++) {
-        var inputValue = cardItem[i].querySelector("input").value
-        var productPrice = cardItem[i].querySelector(".price").innerHTML
-        console.log(productPrice)
-        totalA = inputValue * productPrice * 1000
-            // totalB = totalA.toLocalString('de-DE')
-        totalC = totalC + totalA
-            //totalD = totalC.toLocaleString('de-De')
-    }
-    var cardTotalA = document.querySelector(".price-total span")
-    cardTotalA.innerHTML = totalC.toLocaleString('de-De')
-}
-// ------------------------- DELETE CARD --------------------------
-function deleteCard() {
-    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
-    for (var i = 0; i < cardItem.length; i++) {
-        var productT = document.querySelectorAll(".bi-dash")
-        productT[i].addEventListener("click", function(event) {
-            var cartDelete = event.target
-            var cartitemR = cartDelete.parentElement
-            cartitemR.remove()
-            carttotal()
-                // console.log(cartitemR)
-        })
-    }
-}
+        var el = $(this);
+        window.setTimeout(function() { el.parent().children(".full-price").removeClass("minused");
+            changeVal(el); }, 150);
+    });
 
-function inputchange() {
-    var cardItem = document.querySelectorAll(".order-card-groups .card-item")
-    for (var i = 0; i < cardItem.length; i++) {
-        var productT = document.querySelectorAll(".bi-dash")
-        productT[i].addEventListener("click", function(event) {
-            var cartDelete = event.target
-            var cartitemR = cartDelete.parentElement
-            cartitemR.remove()
-            carttotal()
-                // console.log(cartitemR)
-        })
-    }
-}
+    window.setTimeout(function() { $(".is-open").removeClass("is-open") }, 1200);
+
+    $(".btn").click(function() {
+        check = true;
+        $(".remove").click();
+    });
+});
