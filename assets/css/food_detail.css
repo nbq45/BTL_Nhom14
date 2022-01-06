@@ -1,10 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
-:root{
+:root {
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,12 +17,12 @@
     top: 0px;
 }
 
-.dropdown-item .local{
+.dropdown-item .local {
     text-align: right;
     font-size: 12px;
 }
 
-body{
+body {
     background: #f2f2f2!important;
 }
 
@@ -38,39 +39,46 @@ body{
     margin-top: 60px;
 }
 
-.main_detail{
+.main_detail {
     width: 100%;
     background-color: #fff;
     padding-top: 30px;
     position: relative;
 }
-.figure-img{
+
+.figure-img {
     margin-left: 200px;
 }
-.name_restaurant{
+
+.name_restaurant {
     color: #464646;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 4px;
 }
-.restaurant__local{
+
+.restaurant__local {
     font-size: 13px;
     margin-bottom: 2px;
 }
-.number-rating{
+
+.number-rating {
     background-color: #ffc107;
     padding: 0 5px;
     border-radius: 4px;
     color: #fff;
     margin: 0 5px;
 }
-.utility .text{
+
+.utility .text {
     color: #ee4d2d;
     font-weight: 600;
 }
-.utility-content{
+
+.utility-content {
     border-right: 1px solid #ebebeb;
 }
+
 .icon-partner-vi {
     background-image: url(https://shopeefood.vn/app/assets/img/partner-vi.png?dec00ea8fc6f5429f18e83d16c3685f8);
     position: absolute;
@@ -80,11 +88,13 @@ body{
     width: 116px;
     height: 44px;
 }
-.main-footer{
+
+.main-footer {
     width: 100%;
     height: 100%;
 }
-.menu-restaurant .item{
+
+.menu-restaurant .item {
     color: #cf2127;
     font-size: 15px;
     font-weight: 700;
@@ -92,25 +102,28 @@ body{
     padding-left: 120px;
     cursor: default;
 }
-.menu-category{
+
+.menu-category {
     position: relative;
 }
-.category-left{
+
+.category-left {
     background-color: #fff;
     padding: 15px 5px 15px 15px;
     width: 235px;
     border-radius: 4px;
 }
-.nav-link{
+
+.nav-link {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 5px;
     padding: 2px;
     color: #464646;
-    
 }
-.category-right{
+
+.category-right {
     width: 590px;
     height: 100%;
     margin-left: 10px;
@@ -118,19 +131,23 @@ body{
     border-radius: 4px;
     background-color: #fff;
 }
-.category-right .text-right{
+
+.category-right .text-right {
     color: #464646;
     font-size: 16px;
     font-weight: 600;
 }
-.category-right .promotions{
+
+.category-right .promotions {
     background-color: #fbf9d8;
     border: 1px dashed #575757;
 }
-.list-group-item{
+
+.list-group-item {
     background-color: #fbf9d8;
 }
-.copy-code{
+
+.copy-code {
     top: 10px;
     font-size: 12px;
     color: #575252;
@@ -139,17 +156,20 @@ body{
     border: none;
     float: right;
 }
-.category-right .btn-primary{
+
+.category-right .btn-primary {
     border: none;
     cursor: pointer;
     background-color: #ee4d2d;
 }
-.category-right .product-item{
+
+.category-right .product-item {
     padding-top: 10px;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 10px;
 }
-.bill-restaurant{
+
+.bill-restaurant {
     background-color: #fff;
     border-radius: 4px;
     top: 48px;
@@ -157,117 +177,156 @@ body{
     width: 315px;
     margin-right: 500px;
 }
-.bill-header{
+
+.bill-header {
     border-bottom: 1px solid #ebebeb;
     padding: 7px 10px;
 }
-.order-card-user{
+
+.order-card-user {
     color: #464646;
     background-color: #ebebeb;
     padding: 4px 15px;
 }
-.card-item .clearfix .bi-plus{
+
+.card-item .clearfix .bi-plus {
     background: rgb(26, 180, 26);
     color: #fff;
     border: none;
     border-radius: 4px;
 }
-.card-item .clearfix .bi-dash{
+
+.card-item .clearfix .bi-dash {
     background: #464646;
     color: #fff;
     border: none;
     margin: 2px;
     border-radius: 4px;
 }
-.card-item .note-order{
+
+.card-item .note-order {
     border: none;
 }
-.btn-group .btn{
+
+.btn-group .btn {
     font-size: 12px;
     padding: 2px 8px;
     border-radius: 4px;
 }
+
 .bill-3 {
     font-size: 13px;
     padding: 4px 10px;
 }
-.btn-danger{
+
+.btn-danger {
     background: #ee4d2d;
     font-size: 15px;
     margin: 12px 10px 15px;
     width: calc(100% - 20px);
 }
-.modal-content{
+
+.modal-content {
     background-color: #f5f5f5;
     font-size: 13px;
 }
-.modal-header{
+
+.modal-header {
     font-size: 16px;
     font-weight: 700;
     color: #000;
     padding: 5px 10px;
     border-radius: 5px 5px 0 0;
 }
-.modal-header .btn-primary{
+
+.order-item-number {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    margin-right: 5px;
+    top: 10 px;
+    left: 10 px;
+    width: 15 px;
+    height: 15 px;
+    background-color: #0288d1;
+    line-height: 14px;
+    border-radius: 4 px;
+    padding-top: 1 px;
+}
+
+.modal-header .btn-primary {
     margin-left: 500px;
     font-size: 12px;
 }
-.modal-body{
+
+.modal-body {
     color: #464646;
     padding: 10px-15px;
 }
-.direction-content{
+
+.direction-content {
     background-color: #fff;
     width: 379px;
     height: 172px;
 }
-.direction-info{
+
+.direction-info {
     padding: 5px 10px 5px 23px;
 }
-.direction-from{
+
+.direction-from {
     padding: 5px 0;
     position: relative;
 }
-.direction-name{
+
+.direction-name {
     font-size: 13px;
     font-weight: 700;
     max-width: 96%;
 }
-.direction-to{
+
+.direction-to {
     padding: 5px 0;
     position: relative;
 }
-.direction-to .direction-address{
+
+.direction-to .direction-address {
     font-size: 12px;
 }
-.direction-time{
+
+.direction-time {
     border: 1px solid #464646;
     border-radius: 12px;
     padding: 2px 3px;
     background-color: #fbf9d8;
 }
-.order-right{
+
+.order-right {
     background-color: #fff;
     font-size: 14px;
     width: 100%;
     border-left: 10px;
     height: 100%;
 }
-.info-order{
+
+.info-order {
     border-top: 7px solid #d7d7d7;
     padding: 4px 10px;
 }
-.introbox-1{
+
+.introbox-1 {
     padding: 20px 150px 50px;
     border-radius: 4px;
     position: relative;
 }
-.introbox-2{
+
+.introbox-2 {
     padding: 50px;
     border-radius: 4px;
     position: relative;
 }
-.modal-footer .btn-info{
+
+.modal-footer .btn-info {
     width: 869px;
     height: 44px;
     color: #fff;
@@ -275,36 +334,41 @@ body{
     font-weight: 700;
 }
 
-footer{
+footer {
     margin-left: 150px;
     margin-right: 150px;
     padding-top: 40px;
     position: relative;
 }
-.footer-img{
+
+.footer-img {
     size: 16px;
 }
-.font-weight-bold{
+
+.font-weight-bold {
     font-weight: 700;
     color: #000;
 }
-.last-footer{
+
+.last-footer {
     margin-bottom: 25px;
     text-align: right;
     float: right;
     font-size: 16px;
 }
-.footer-icon{
+
+.footer-icon {
     display: inline-block;
     padding: 0 8px;
 }
-.bi-facebook{
+
+.bi-facebook {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
 }
-.bi-instagram{
+
+.bi-instagram {
     width: 30px;
     height: 30px;
     border-radius: 50%;
