@@ -434,7 +434,7 @@
                                     <div class="row">
                                         <div class="col">Cộng</div>
                                         <div class="col-auto">
-                                            <span class="price-total"></span>
+                                            <span class="price-total">0<sup>đ</sup></span>
                                         </div>
                                     </div>
                                 </div>
@@ -541,7 +541,7 @@
                                                             <div class="row">
                                                                 <div class="col">Tổng cộng</div>
                                                                 <div class="col-auto">
-                                                                    <span class="final-price text-bold font16"></span>
+                                                                    <span class="final-price text-bold font16">0<sup>đ</sup></span>
                                                                 </div>
                                                             </div>
                                                         </div>
