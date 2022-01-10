@@ -26,6 +26,13 @@
                 </tr>
 
                 <tr>
+                    <td>Tên Cửa Hàng:  </td>
+                    <td>
+                        <input type="text" name="ten_ch" placeholder="Điền vào tên cửa hàng">
+                    </td>
+                </tr>
+
+                <tr>
                     <td>Giá: </td>
                     <td>
                         <input type="text" name="gia" placeholder="Giá sản phẩm:....">

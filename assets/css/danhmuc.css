@@ -32,3 +32,8 @@ ul.product_list li a{
 .btn_list{
     display: inline-flex;
 }
+.img_cuahang{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}

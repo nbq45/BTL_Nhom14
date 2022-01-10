@@ -91,8 +91,8 @@
                             </div>
                         </div>
                         <div class="category-list col-md-7 gap-4">
-                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="all.html">All</button>
-                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="do_an-do_an.html">Đồ ăn</button>
+                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="all.php">All</button>
+                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="do_an-do_an.php">Đồ ăn</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2">Đồ uống</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2">Đồ chay</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2">Bánh kem</button>
