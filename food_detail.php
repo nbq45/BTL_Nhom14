@@ -434,7 +434,7 @@
                                     <div class="row">
                                         <div class="col">Cộng</div>
                                         <div class="col-auto">
-                                            <span class="price-total"></span>
+                                            <span class="price-total">0<sup>đ</sup></span>
                                         </div>
                                     </div>
                                 </div>
@@ -504,7 +504,7 @@
                                                         <div class="info-order">
                                                             <div class="row">
                                                                 <div class="col total">Tổng cộng
-                                                                    <span class="number-order">0</span> phần
+                                                                    <span class="number-order">0 phần</span>
                                                                 </div>
                                                                 <div class="col-auto price-order"></div>
                                                             </div>
@@ -559,12 +559,14 @@
                                             </div>
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-info btn-lg" href="order_food.html" data-bs-toggle="modal" data-bs-target="#incoming-order">
-                            <div class="row">
-                              <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
-                              <div class="col-md-3"><span class="total-price">0đ</span></div>
-                            </div>
-                          </button>
+                                                <a href="order_food.php">
+                                                    <button type="button" class="btn btn-info btn-lg" href="order_food.php" data-bs-toggle="modal" data-bs-target="#incoming-order">
+                                                        <div class="row">
+                                                        <div class="col-md-9">ĐẶT HÀNG <i class="bi bi-arrow-right" style="font-weight: 700;"></i></div>
+                                                        <div class="col-md-3"><span class="total-price"></div>
+                                                        </div>
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
