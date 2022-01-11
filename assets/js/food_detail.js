@@ -223,6 +223,8 @@ function displayCart() {
         productPriceOrder.innerHTML += `${cartCost},000<sup>đ</sup>`
         let productFinalPrice = document.querySelector('.final-price-order .final-price');
         productFinalPrice.innerHTML += `${cartCost},000<sup>đ</sup>`
+        let productModalPrice = document.querySelector('.modal-footer .total-price');
+        productModalPrice.innerHTML += `${cartCost},000<sup>đ</sup>`
     }
 }
 
