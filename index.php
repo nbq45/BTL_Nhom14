@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Đặt đồ ăn trực tuyến Ở 16 tỉnh thành trên Toàn Quốc & Giao hàng tận nơi | Đặt món & giao ship tận nơi | shopeefood.vn</title>
 </head>
 
 <body>
+    <?php
+    session_start();
+    ?>
     <!-- header -->
     <header class="container-fluid fixed-top shopeefood__header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,28 +22,27 @@
                 <a class="navbar-brand shopeefood__logo ms-5 pe-5" href="#">
                     <img src="assets/img/Shopeefood.jpg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown pe-5 ">
-                            <a class="nav-link dropdown-toggle" href="index.php" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="index.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Hà Nội
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="index.php">
-                                    <span >Hà Nội</span>
-                                    <span class="local text-muted">37811 địa điểm</span>
-                                </a></li>
-                                <li><hr class="dropdown-divider"></li>
+                                        <span>Hà Nội</span>
+                                        <span class="local text-muted">37811 địa điểm</span>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="index_hcm.php">
-                                    <span >TP. HCM</span>
-                                    <span class="local text-muted">78481 địa điểm</span>
-                                </a>
+                                        <span>TP. HCM</span>
+                                        <span class="local text-muted">78481 địa điểm</span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -119,7 +120,7 @@
                 <div class="col-md-6 mt-5">
                     <div class="rightside__location w-100 p-4">
                         <!-- Button trigger modal -->
-                        <div class="d-grid gap-2" >
+                        <div class="d-grid gap-2">
                             <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#urLocation__modal">
                                 Đồ ăn -> Chọn địa chỉ giao hàng
                             </button>
@@ -146,223 +147,76 @@
                     <div class="restaurants__deals bg-white rounded">
                         <h4 class="ms-3">Ưu Đãi</h4>
                         <div class="overflow-auto h-20 restaurant__list bg-white">
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="restaurant">
-                                <a href="food_detail.php" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="https://images.foody.vn/res/g12/111755/prof/s280x175/file_restaurant_photo_obr1_16360-d741b77c-211104162850.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate">Stamp Coffee - Đinh Tiên Hoàng</h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small>75 Đinh Tiên Hoàng , Hoàn Kiếm, Hà Nội</small></p>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="product">
+                                <ul class="product_list" style="list-style-type: none;">
+                                    <?php
+                                    require 'config/constants.php';
+                                    $sql_do_an = "SELECT * FROM cuahang";
+                                    $result_do_an = mysqli_query($conn, $sql_do_an);
+                                    while ($row_do_an = mysqli_fetch_assoc($result_do_an)) {
+                                    ?>
+
+                                        <li class="rounded" style="margin-right: 1%;margin-left:1%; margin-bottom: 25px;height: 200px;width: 200px;background-color: white;">
+                                            <a href="<?php echo $row_do_an['menu_ch'] ?>" style="height:100%;text-decoration: none;">
+                                                <img class="img_cuahang" style="object-fit: cover;width: 200px;height: 150px;width:100%" src="<?php echo $row_do_an['img_ch'] ?>" alt="" />
+                                                <p class="title_product" style="font-size: medium; color: black; font-weight: bold;overflow-x: hidden;width:100%;height: 30px;overflow-y:hidden;margin-bottom: 0;">
+                                                    <?php echo $row_do_an['ten_ch'] ?>
+                                                </p>
+                                                <p class="address_product" style="font-size: small; color: darkgray; font-weight: bold;overflow-x: hidden;width:100%;height: 20px;overflow-y:hidden;margin-bottom: 0;">
+                                                    <?php echo $row_do_an['address'] ?>
+                                                </p>
+                                                <hr style="margin: 0;" />
+                                                <p class="promotion" style="font-size: medium;width:100%; color:red;margin-bottom: 0;">
+                                                    <i class="bi bi-tag-fill">Giảm giá <?php echo $row_do_an['giamgia'] ?>%</i>
+                                                </p>
+                                            </a>
+                                        </li>
+                                    <?php
+                                    }
+                                    ?>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="restaurants__collection bg-white rounded mt-3">
-                        <h4 class="ms-3"> Bộ sưu tập</h4>
-                        <div class="overflow-auto collection__list bg-white rounded">
-                            <div class="collection">
-                                <div class="collection__cover">
-                                    <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
-                                </div>
-                                <div class="collection__details">
-                                    <div class="collection__title">
-                                        <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
+                        <div class="restaurants__collection bg-white rounded mt-3">
+                            <h4 class="ms-3"> Bộ sưu tập</h4>
+                            <div class="overflow-auto collection__list bg-white rounded">
+                                <div class="collection">
+                                    <div class="collection__cover">
+                                        <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
                                     </div>
-                                    <div class="collection__locations">
-                                        <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="collection">
-                                <div class="collection__cover">
-                                    <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
-                                </div>
-                                <div class="collection__details">
-                                    <div class="collection__title">
-                                        <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
-                                    </div>
-                                    <div class="collection__locations">
-                                        <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
+                                    <div class="collection__details">
+                                        <div class="collection__title">
+                                            <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
+                                        </div>
+                                        <div class="collection__locations">
+                                            <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="collection">
-                                <div class="collection__cover">
-                                    <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
-                                </div>
-                                <div class="collection__details">
-                                    <div class="collection__title">
-                                        <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
+                                <div class="collection">
+                                    <div class="collection__cover">
+                                        <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
                                     </div>
-                                    <div class="collection__locations">
-                                        <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
+                                    <div class="collection__details">
+                                        <div class="collection__title">
+                                            <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
+                                        </div>
+                                        <div class="collection__locations">
+                                            <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collection">
+                                    <div class="collection__cover">
+                                        <img src="https://images.foody.vn/delivery/collection/s320x200/image-db4423ba-211224163133.png" alt="">
+                                    </div>
+                                    <div class="collection__details">
+                                        <div class="collection__title">
+                                            <h6 class="text-truncate">Đếm ngược từng giây chớp deal 5K</h6>
+                                        </div>
+                                        <div class="collection__locations">
+                                            <p class="text-truncate text-primary"><small>200 địa điểm</small></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -371,7 +225,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="shopeefood__introduction">
@@ -382,7 +235,7 @@
                         <h1 class="title">Đơn hàng của bạn sẽ được bảo quản như thế nào?</h1>
                         <p class="font15">ShopeeFood sẽ bảo quản đơn của bạn bằng túi & thùng để chống nắng mưa, giữ nhiệt... trên đường đi
                             một cách tốt nhất.</p>
-                        <img src="assets\img\Box-food-preservation-footer.jpg" class="mw-100"  alt="">
+                        <img src="assets\img\Box-food-preservation-footer.jpg" class="mw-100" alt="">
                     </div>
                 </div>
             </div>
@@ -390,16 +243,17 @@
                 <div class="col-md-8">
                     <div class="introbox-2 ">
                         <h4 class="title">ShopeeFood Merchant App</h4>
-                    <span>
-                        <p class="font14">- 
-                            <b>ShopeeFood Merchant</b> là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi </p>
-                            <p class="font14"> - 
-                            <b>ShopeeFood.vn</b> luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ... 
-                            <br> Đăng ký tham gia: <b>
-                                <a href="" class="text-decoration-none" style="color: #3a94ee" target="_blank">tại đây</a>
-                            </b>
-                        </p>
-                    </span>
+                        <span>
+                            <p class="font14">-
+                                <b>ShopeeFood Merchant</b> là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi
+                            </p>
+                            <p class="font14"> -
+                                <b>ShopeeFood.vn</b> luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ...
+                                <br> Đăng ký tham gia: <b>
+                                    <a href="" class="text-decoration-none" style="color: #3a94ee" target="_blank">tại đây</a>
+                                </b>
+                            </p>
+                        </span>
                     </div>
                 </div>
                 <div class="col-md-4 mw-100">
@@ -411,19 +265,19 @@
                     <h4 class="title">
                         <span style="color: #EE4D2D;font-weight: bold;">ShopeeFood.vn</span>
                         <a href="" class="text-decoration-none" style="color: #3a94ee; font-weight:bold">Hợp tác nhân viên giao nhận - ShopeeFood Driver</a>
-                  </h4>
-                  <span>
-                    <p class="font15">Giúp bạn tăng thu nhập trong thời gian rảnh rỗi</p>
-                    <p>
-                      <span style="color: #EE4D2D;font-weight: bold;">ShopeeFood</span> 
-                      tìm kiếm hợp tác với các cá nhân để thực hiện việc giao hàng, chúng tôi sẽ cung cấp ứng dụng (app), 1 số dụng cụ cần thiết để bạn có thể tiếp nhận &amp; giao hàng, kiếm thêm thu nhập 
-                      <br>Đăng ký tham gia 
-                      <a href="" class="text-decoration-none" style="color: #4D77A2; font-weight:bold">tại đây</a>
-                       hoặc gửi Email qua 
-                      <a href="" class="text-decoration-none" style="color: #4D77A2; font-weight:bold">tuyendung@gofast.vn</a>
-                       - hoặc gọi qua số điện thoại (028) 7109 9179. 
-                    </p>
-                  </span>
+                    </h4>
+                    <span>
+                        <p class="font15">Giúp bạn tăng thu nhập trong thời gian rảnh rỗi</p>
+                        <p>
+                            <span style="color: #EE4D2D;font-weight: bold;">ShopeeFood</span>
+                            tìm kiếm hợp tác với các cá nhân để thực hiện việc giao hàng, chúng tôi sẽ cung cấp ứng dụng (app), 1 số dụng cụ cần thiết để bạn có thể tiếp nhận &amp; giao hàng, kiếm thêm thu nhập
+                            <br>Đăng ký tham gia
+                            <a href="" class="text-decoration-none" style="color: #4D77A2; font-weight:bold">tại đây</a>
+                            hoặc gửi Email qua
+                            <a href="" class="text-decoration-none" style="color: #4D77A2; font-weight:bold">tuyendung@gofast.vn</a>
+                            - hoặc gọi qua số điện thoại (028) 7109 9179.
+                        </p>
+                    </span>
                 </div>
                 <div class="col-md-4">
                     <img src="assets\img\bg-deliverynow.jpg" class="mw-100" alt="">
@@ -504,8 +358,8 @@
             <hr>
             <div class="row mt-2">
                 <div class="col-md">
-                  <p class="font-weight-bold">Công ty</p>
-                  <ul class="list-group"></ul>
+                    <p class="font-weight-bold">Công ty</p>
+                    <ul class="list-group"></ul>
                     <h6><a href="" class="text-decoration-none link-primary">Giới thiệu</a></h6>
                     <h6><a href="" class="text-decoration-none link-primary">Trung tâm trợ giúp</a></h6>
                     <h6><a href="" class="text-decoration-none link-primary">Quy chế</a></h6>
@@ -516,52 +370,49 @@
                     <h6><a href="" class="text-decoration-none link-primary">Hợp tác nhân viên giao nhận</a></h6>
                     <h6><a href="" class="text-decoration-none link-primary">Đăng ký quán</a></h6>
                     <h6><a href="" class="text-decoration-none link-primary">ShopeeFood Uni</a></h6>
-                  </ul>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <p class="font-weight-bold">Ứng dụng ShopeeFood</p>
+                    <div class="footer-img">
+                        <h2><a href="https://apps.apple.com/us/app/deliverynow/id1137866760"><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
+                        <h2><a href="https://play.google.com/store/apps/details?id=com.deliverynow"><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
+                        <h2><a href=""><img src="assets/img/Huawei-gallery-vn.jpg" width="100px"></a></h2>
                     </div>
-                    <div class="col-md">
-                      <p class="font-weight-bold">Ứng dụng ShopeeFood</p>
-                      <div class="footer-img">
-                        <h2><a href="https://apps.apple.com/us/app/deliverynow/id1137866760" ><img src="assets/img/AppStore-vn.jpg" width="100px"></a></h2>
-                        <h2><a href="https://play.google.com/store/apps/details?id=com.deliverynow" ><img src="assets/img/PlayStore.jpg" width="100px"></a></h2>
-                        <h2><a href="" ><img src="assets/img/Huawei-gallery-vn.jpg" width="100px"></a></h2>
-                      </div>
-                    </div>
-                    <div class="col-md">
-                      <a href=""><img src="assets/img/Logo-ShopeefoodVN.jpg" width="100px"></a>
-                      <div class="col-md text-muted">
+                </div>
+                <div class="col-md">
+                    <a href=""><img src="assets/img/Logo-ShopeefoodVN.jpg" width="100px"></a>
+                    <div class="col-md text-muted">
                         &copy: 2021 ShopeeFood
-                      </div>
-                      <div class="footer-icon">
-                          <a href="" class="rounded float-start"><i class="bi bi-facebook" style="font-size: 2rem; color: gray"></i></a>
-                          <a href="" class="rounded float-start"><i class="bi bi-instagram" style="font-size: 2rem; color: gray"></i></a>
-                      </div>
                     </div>
-                    <div class="col-md-5">
-                      <div class="last-footer">
+                    <div class="footer-icon">
+                        <a href="" class="rounded float-start"><i class="bi bi-facebook" style="font-size: 2rem; color: gray"></i></a>
+                        <a href="" class="rounded float-start"><i class="bi bi-instagram" style="font-size: 2rem; color: gray"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="last-footer">
                         <p class="font-weight-bold">Địa chỉ công ty</p>
-                          <h6>Công Ty Cổ Phần Foody</h6>
-                          <h6>Lầu G, Tòa nhà Jabes 1,</h6>
-                          <h6>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</h6>
-                          <h6>Giấy CN ĐKDN số: 0311828036</h6>
-                          <h6>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</h6>
-                          <h6>sửa đổi lần thứ 23, ngày 10/12/2020</h6>
-                          <h6>Số điện thoại: 1900 2042</h6>
-                          <h6>Email: <a href="" class="text-decoration-none" style="color: #3a94ee">info@shopeefood.vn</a> </h6>
+                        <h6>Công Ty Cổ Phần Foody</h6>
+                        <h6>Lầu G, Tòa nhà Jabes 1,</h6>
+                        <h6>số 244 đường Cống Quỳnh, phường Phạm Ngũ Lão, Quận 1, TPHCM</h6>
+                        <h6>Giấy CN ĐKDN số: 0311828036</h6>
+                        <h6>do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 11/6/2012,</h6>
+                        <h6>sửa đổi lần thứ 23, ngày 10/12/2020</h6>
+                        <h6>Số điện thoại: 1900 2042</h6>
+                        <h6>Email: <a href="" class="text-decoration-none" style="color: #3a94ee">info@shopeefood.vn</a> </h6>
                         <div class="footer-img">
-                          <a href="" class="text-decoration-none link-primary"><img src="assets/img/gov_seals1.jpg" width="170px"></a>
+                            <a href="" class="text-decoration-none link-primary"><img src="assets/img/gov_seals1.jpg" width="170px"></a>
                         </div>
-                      </div>
                     </div>
-              </div>
+                </div>
             </div>
-          </div>
-          <hr>
         </div>
-      </footer>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"
-      ></script>
-    </body>
-  </html>
+    </div>
+    <hr>
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
