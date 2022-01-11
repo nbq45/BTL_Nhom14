@@ -38,7 +38,7 @@
                     <a class="nav-link" href="manage-order.php">Order</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Users</a>
+                    <a class="nav-link" href="manage-user.php">Users</a>
                     </li>
                     <?php
                         if(isset($_SESSION['user']))
