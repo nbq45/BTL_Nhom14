@@ -2,7 +2,7 @@
 if(isset($_POST['btnRegister']) && $_POST['email'])
 {   
     //gọi lại đoạn kết nối vs db
-    require "db.php";
+    require "config/constants.php.php";
     //thực hiện truy vấn
     $result = mysqli_query($conn,"SELECT * FROM khachhang WHERE email='" . $_POST['email'] . "'");
 
@@ -33,3 +33,4 @@ if(isset($_POST['btnRegister']) && $_POST['email'])
         echo "Bạn đã đăng ký thành công. Vui lòng xác nhận Email của bạn.";
     }
 }
+?>

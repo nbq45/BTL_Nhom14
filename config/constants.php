@@ -1,10 +1,7 @@
 <?php 
     //Start Session
-    session_start();
-
-
     //Create Constants to Store Non Repeating Values
-    define('SITEURL', 'http://localhost/BTL_Nhom14/');
+    define('SITEURL', 'http://localhost/GitHub/BTL_nhom14/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');

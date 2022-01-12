@@ -10,6 +10,7 @@
                 <tr>
                     <th scope="col">Mã sản phẩm</th>
                     <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">Tên cửa hàng</th>
                     <th scope="col">Giá</th>
                     <th scope="col">Mức Giảm Giá</th>
                 </tr>

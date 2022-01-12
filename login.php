@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  if(!isset($_SESSION['isLoginOk'])){
+    header("location:login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,12 +91,14 @@
           <div class="header-icon-search">
             <i class="bi bi-search"></i>
           </div>
-          <button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>
+          <div class="btn">
+            <button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>
+          </div>
         </div>
       </div>
     </nav>
   </header>
-  <div class="login">
+  <form class="login" action="process-login.php" method="POST">
     <div class="container" style="text-align: center;width: 600px;background-color: rgb(255, 255, 255);">
       <div class="main-login" style="background-color: rgb(255, 255, 255);">
         <h4 class="title" style="color: black;">Sign up</h4>
@@ -111,12 +119,17 @@
         <p class="text mt-4 mb-4" id="mess">Hoặc nhập mật khẩu bằng tài khoản của bạn</p>
         <div class="input-type">
           <div class="email">
-            <input class="form-control input-sm" type="text" placeholder="Username or email">
+            <input class="form-control input-sm" type="text" name="txtEmail" placeholder="Username or email">
           </div>
           <div class="password">
-            <input class="form-control input-sm" type="text" placeholder="Password">
+            <input class="form-control input-sm" type="password" name="txtPass" placeholder="Password">
           </div>
         </div>
+        <?php
+          if(isset($_GET['error'])){
+            echo "<h5 style='color:red; text-align:left'>{$_GET['error']}</h5>";
+          }
+        ?>
         <div class="form-login2 clearfix mt-4 mb-4">
           <div class="left-group" style="text-align: left;">
             <input type="checkbox" id="rememberme" checked>
@@ -127,7 +140,7 @@
           </div>
         </div>
         <div class="btnLogin" style="background-color: #187caa">
-          <button style="color: aliceblue;" class="btn btn-block btn-submit">Đăng Nhập</button>
+          <button style="color: aliceblue;" class="btn btn-block btn-submit" name="btnSignIn">Đăng Nhập</button>
         </div>
         <div class="mess-policy">
           "Chúng tôi không sử dụng thông tin của bạn với bất kỳ mục đích nào. Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với"
@@ -135,7 +148,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </form>
   <footer class="container">
     <div class="row mt-2">
       <div class="col-md">
