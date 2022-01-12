@@ -177,35 +177,7 @@
                                     }
                                     ?>
                                 </ul>
-                            <div class="restaurant">
-                                <?php
-                                    require 'config/constants.php';
-                                    $sql_do_an = "SELECT * FROM cuahang";
-                                    $result_do_an = mysqli_query($conn, $sql_do_an);
-                                    while ($row_do_an = mysqli_fetch_assoc($result_do_an)) {
-                                ?>
-                                <a href="<?php echo $row_do_an['menu_ch'] ?>" class="text-decoration-none">
-                                    <div class="restaurant__cover">
-                                        <img src="<?php echo $row_do_an['img_ch'] ?>"
-                                            alt="">
-                                    </div>
-                                    <div class="restaurant__details">
-                                        <div class="restaurant__title">
-                                            <h6 class="text-truncate"><?php echo $row_do_an['ten_ch'] ?></h6>
-                                        </div>
-                                        <div class="restaurant__location">
-                                            <p class="text-truncate"><small><?php echo $row_do_an['address'] ?></small></p>
-                                        </div>
-                                        <p class="promotion" style="font-size: medium;width:100%; color:red;margin-bottom: 0;">
-                                            <i class="bi bi-tag-fill">Giảm giá <?php echo $row_do_an['giamgia'] ?>%</i>
-                                        </p>
-                                    </div>
-                                </a>
-                                <?php
-                                    }
-                                ?>
                             </div>
-                        </div>
                         </div>
                         <div class="restaurants__collection bg-white rounded mt-3">
                             <h4 class="ms-3"> Bộ sưu tập</h4>
