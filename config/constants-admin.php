@@ -1,6 +1,7 @@
 <?php 
-    //Start Session
     session_start();
+    
+    //Start Session
     //Create Constants to Store Non Repeating Values
     define('SITEURL', 'http://localhost/BTL_Nhom14/');
     define('LOCALHOST', 'localhost');

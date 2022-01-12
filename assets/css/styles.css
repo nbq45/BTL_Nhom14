@@ -65,6 +65,14 @@ body{
     height: 100%;
     width: 100%;
 }
+
+.product_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
 .introbox{
     background-color: white;
     border-radius: 10px;
