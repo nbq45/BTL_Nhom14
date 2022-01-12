@@ -8,11 +8,13 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Mã sản phẩm</th>
-                    <th scope="col">Tên sản phẩm</th>
+                    <th scope="col">STT</th>
                     <th scope="col">Tên cửa hàng</th>
-                    <th scope="col">Giá</th>
-                    <th scope="col">Mức Giảm Giá</th>
+                    <th scope="col">Địa chỉ</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Ảnh</th>
+                    <th scope="col">Mức ưu đãi giảm giá</th>
+                    <th scope="col">Chỉnh sửa</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,21 +26,23 @@
                     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                 }
                 
-                $sql = "SELECT ma_sp, ten_sp, gia, giamgia FROM sanpham";
+                $sql = "SELECT * FROM cuahang";
                 $result = mysqli_query($conn, $sql);
                 
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-
                 ?>
                         <tr>
-                            <th scope="row"><?php echo $row['ma_sp']; ?></th>
-                            <td><?php echo $row['ten_sp']; ?></td>
-                            <td><?php echo $row['gia']; ?></td>
+                            <th scope="row"><?php echo $row['ma_ch']; ?></th>
+                            <td><?php echo $row['ten_ch']; ?></td>
+                            <td><?php echo $row['address']; ?></td>
+                            <td><?php echo $row['phone']; ?></td>
+                            <td><img class="img_cuahang" style="width: 100px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
                             <td><?php echo $row['giamgia']; ?></td>
-                            <td><img class="img_cuahang" style="width: 200px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
-                            <td><a href="update-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                            <td><a href="delete-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-trash"></i></a></td>
+                            <td>
+                                <a href="update-user.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
+                                <a href="delete-user.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
                         </tr>
                 <?php
                     }
