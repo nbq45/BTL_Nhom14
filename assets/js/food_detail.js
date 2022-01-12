@@ -88,7 +88,6 @@ for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener('click', () => {
         cartNumbers(products[i]);
         totalCost(products[i]);
-        deleteCard()
     })
 }
 
@@ -244,3 +243,4 @@ function deleteCard() {
 }
 onLoadCartNumbers();
 displayCart();
+deleteCard();
