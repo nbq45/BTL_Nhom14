@@ -24,7 +24,7 @@
                     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                 }
                 
-                $sql = "SELECT ma_sp, ten_sp, gia, giamgia FROM sanpham";
+                $sql = "SELECT * FROM sanpham";
                 $result = mysqli_query($conn, $sql);
                 
                 if (mysqli_num_rows($result) > 0) {

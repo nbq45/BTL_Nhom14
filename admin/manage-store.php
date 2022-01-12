@@ -3,9 +3,9 @@
     <div class="container">
         <h5 class="text-center text-primary mt-5">DANH SÁCH SẢN PHẨM</h5>
         <div>
-            <a class="btn btn-primary" href="add-food.php">Thêm</a>
+            <a class="btn btn-primary" href="add-store.php">Thêm</a>
         </div>
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">STT</th>
@@ -37,11 +37,11 @@
                             <td><?php echo $row['ten_ch']; ?></td>
                             <td><?php echo $row['address']; ?></td>
                             <td><?php echo $row['phone']; ?></td>
-                            <td><img class="img_cuahang" style="width: 100px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
-                            <td><?php echo $row['giamgia']; ?></td>
+                            <td><img style="width: 100px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
+                            <td><?php echo $row['giamgia']; ?>%</td>
                             <td>
-                                <a href="update-user.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
-                                <a href="delete-user.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+                                <a href="update-store.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
+                                <a href="delete-store.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-danger btn-sm">Xóa</a>
                             </td>
                         </tr>
                 <?php

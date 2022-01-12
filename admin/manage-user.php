@@ -2,7 +2,7 @@
 <main>
     <div class="container">
         <h5 class="text-center text-primary mt-5">Quản lý tài khoản</h5>
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Mã khách hàng</th>
