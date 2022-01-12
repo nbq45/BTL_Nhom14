@@ -185,7 +185,7 @@
                                                         <div class="col-md text-muted" style="font-size:large;">CÀ PHÊ</div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/bac-xiu.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/bac-xiu.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Bạc xỉu</h1>
@@ -194,12 +194,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1;"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/cafe-den.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/cafe-den.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Cà phê đen</h1>
@@ -208,12 +208,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/cafe-nau.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/cafe-nau.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Cà phê nâu</h1>
@@ -222,12 +222,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/capuchino.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/capuchino.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Capuchino</h1>
@@ -236,7 +236,7 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -244,7 +244,7 @@
                                                         <div class="col-md text-muted" style="font-size:large;">TRÀ</div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/tra-dao-cam-sa.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/tra-dao-cam-sa.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Trà đào cam sả</h1>
@@ -253,12 +253,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/tra-chanh.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/tra-chanh.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Trà chanh</h1>
@@ -267,12 +267,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/hong-tra-sua.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_uong/hong-tra-sua.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Hồng trà sữa</h1>
@@ -281,7 +281,7 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>40,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -289,7 +289,7 @@
                                                         <div class="col-md text-muted" style="font-size:large;">ĐỒ UỐNG KHÁC</div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/sua-chua-da.jfif" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/sua-chua-danh-da.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Sữa chua đánh đá</h1>
@@ -298,12 +298,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>28,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/sua-chua-cacao.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/sua-chua-cacao.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Sữa chua cacao</h1>
@@ -312,12 +312,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/sua-chua-cafe.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/sua-chua-cafe.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="text text-right">Sữa chua cafe</h1>
@@ -326,7 +326,7 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>35,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -334,7 +334,7 @@
                                                         <div class="col-md text-muted" style="font-size:large;">ĐỒ ĂN VẶT</div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/banh-quy.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/banh-quy.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Bánh quy bơ</h1>
@@ -343,12 +343,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/banh-quy-socola.jpg" width="60px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/banh-quy-socola.jpg" width="60px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Bánh quy socola</h1>
@@ -357,12 +357,12 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>30,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
-                                                                <a href=""><img src="assets/img/huong-duong.jpg" width="50px" style="margin: 5px;"></a>
+                                                                <a href=""><img src="assets/img/do_trang_mieng/huong-duong.jpg" width="50px" style="margin: 5px;"></a>
                                                             </div>
                                                             <div class="col-sm">
                                                                 <h1 class="item-name text-right">Hướng dương</h1>
@@ -371,7 +371,7 @@
                                                                 <h2 class="price text-right" style="color: #0288d1"><span>20,000</span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <button id ="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -417,7 +417,7 @@
                                         <!-- <div class="card-item">
                                             <div class="clearfix">
                                                 <button class="bi bi-plus"></button>
-                                                <span class="number-order">0</span>
+                                                <span class="number-order">1</span>
                                                 <button class="bi bi-dash"></button>
                                                 <span class="name-order"></span>
                                             </div>
@@ -434,7 +434,7 @@
                                     <div class="row">
                                         <div class="col">Cộng</div>
                                         <div class="col-auto">
-                                            <span class="price-total">0<sup>đ</sup></span>
+                                            <span class="price-total"><span></span><sup>đ</sup></span>
                                         </div>
                                     </div>
                                 </div>
@@ -519,7 +519,7 @@
                                                                 <div class="col">Phí vận chuyển: <span style="color: red;">2.0 km</span>
                                                                     <i class="bi bi-question-circle"></i>
                                                                 </div>
-                                                                <div class="col-auto "><span>0</span><sup>đ</sup></div>
+                                                                <div class="col-auto "><span></span><sup>đ</sup></div>
                                                             </div>
                                                         </div>
                                                         <div class="note-order">
