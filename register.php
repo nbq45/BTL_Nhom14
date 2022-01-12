@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false">
-    </script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false"></script>
     <script>
           //Khoi tao Map
           function initialize() {
@@ -25,6 +24,8 @@
           }
           google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/check_email.js"></script>
     <title>Shopee Food</title>
 </head>
 <body>
@@ -89,82 +90,83 @@
           </nav>
     </header>
     <div class="container mt-5">
-      <div class="card">
-        <div class="card-header text-center">
-          Tạo tài khoản
-        </div>
-        <div class="card-body">
-          <form action="process-register.php" method="post">
-            <div class="form-group">
-              <label for="exampleInputEmail1">Tên đăng nhập</label>
-              <input
-                type="text"
-                name="name"
-                class="form-control"
-                id="name"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email</label>
-              <input
-                type="email"
-                name="email"
-                class="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Mật khẩu</label>
-              <input
-                type="password"
-                name="password"
-                class="form-control"
-                id="password"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Xác nhận mật khẩu</label>
-              <input
-                type="password"
-                name="cpassword"
-                class="form-control"
-                id="cpassword"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Số điện thoại</label>
-              <input
-                type="text"
-                name="phone"
-                class="form-control"
-                id="phone"
-                required=""
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Địa chỉ</label>
-              <input
-                type="text"
-                name="address"
-                class="form-control"
-                id="address"
-                required=""
-              />
-            </div>
+        <div class="card">
+          <div class="card-header text-center">
+            Tạo tài khoản
           </div>
-            <input
-              type="submit"
-              name="btnRegister"
-              class="btn btn-primary"
-            />
-          </form>
+          <div class="card-body">
+            <form action="process-register.php" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Tên đăng nhập</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  required=""
+                />
+                <!-- <small id="emailHelp" class="form-text"></small> -->
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Mật khẩu</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  id="password"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Xác nhận mật khẩu</label>
+                <input
+                  type="password"
+                  name="cpassword"
+                  class="form-control"
+                  id="cpassword"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Số điện thoại</label>
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  id="phone"
+                  required=""
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Địa chỉ</label>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  id="address"
+                  required=""
+                />
+              </div>
+            </div>
+              <input
+                type="submit"
+                name="btnRegister"
+                class="btn btn-primary"
+              />
+            </form>
+          </div>
         </div>
-      </div>
     </div>
   <footer class="container">
     <div class="row mt-2">

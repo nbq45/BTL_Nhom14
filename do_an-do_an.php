@@ -138,18 +138,6 @@
           </div>
         </div>
       </div>
-      <div class="dropdown" >
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Đúng nhất
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Đúng nhất</a></li>
-          <li><a class="dropdown-item" href="#">Gần tôi</a></li>
-          <li><a class="dropdown-item" href="#">Đánh giá</a></li>
-          <li><a class="dropdown-item" href="#">Bán chạy</a></li>
-          <li><a class="dropdown-item" href="#">Giao nhanh</a></li>
-        </ul>
-      </div>
     </div>
     <hr/>
     <div class="content">

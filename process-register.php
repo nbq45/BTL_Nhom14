@@ -1,10 +1,23 @@
 <?php
-if(isset($_POST['btnRegister']) && $_POST['email'])
+if(isset($_POST['btnRegister']))
 {   
     //gọi lại đoạn kết nối vs db
-    require "config/constants.php.php";
+    require __DIR__.'/../BTL_Nhom14/config/constants.php';
     //thực hiện truy vấn
     $result = mysqli_query($conn,"SELECT * FROM khachhang WHERE email='" . $_POST['email'] . "'");
+    $token = md5($_POST['email']).rand(10,9999);
+        //lưu lại thông tin đăng ký
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $password = password_hash($_POST['password'],PASSWORD_DEFAULT);
+        $address = $_POST['address'];
+        $phone = $_POST['phone'];
+        $sql = "INSERT INTO khachhang(name, email, email_verification_link ,password, address, phone) VALUES('$name','$email','$token','$password','$address','$phone')";
+        mysqli_query($conn, $sql);
+        
+
+
+
 
     if(mysqli_num_rows($result) <= 0)//kiểm tra email chưa được dùng
     {

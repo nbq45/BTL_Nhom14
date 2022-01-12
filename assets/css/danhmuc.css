@@ -36,4 +36,5 @@ ul.product_list li a{
     object-fit: cover;
     width: 200px;
     height: 200px;
+    text-decoration: none;
 }
