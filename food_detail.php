@@ -414,7 +414,7 @@
                                         </div>
                                     </div>
                                     <div class="order-card-groups">
-                                        <div class="card-item">
+                                        <!-- <div class="card-item">
                                             <div class="clearfix">
                                                 <button class="bi bi-plus"></button>
                                                 <span class="number-order">0</span>
@@ -427,7 +427,7 @@
                                                     <div class="col-auto"><span class="price-order">0<sup>đ</sup></span></div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="bill-2" style="flex-grow: 1;max-width: 100%;background-color: #ebebeb;">
@@ -640,7 +640,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/food_detail.js"></script>
 </body>
 
