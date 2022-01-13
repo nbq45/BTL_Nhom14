@@ -1,16 +1,20 @@
 <?php include('partials/header.php'); ?>
 <main>
     <div class="container">
-        <h5 class="text-center text-primary mt-5">Quản lý tài khoản</h5>
+        <h5 class="text-center text-primary mt-5">DANH SÁCH SẢN PHẨM</h5>
+        <div>
+            <a class="btn btn-primary" href="add-store.php">Thêm</a>
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Mã khách hàng</th>
-                    <th scope="col">Tên tài khoản</th>
-                    <th scope="col">Email</th>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên cửa hàng</th>
                     <th scope="col">Địa chỉ</th>
                     <th scope="col">Số điện thoại</th>
-                    <th scope="col">Cập nhật</th>
+                    <th scope="col">Ảnh</th>
+                    <th scope="col">Mức ưu đãi giảm giá</th>
+                    <th scope="col">Chỉnh sửa</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,21 +26,22 @@
                     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                 }
                 
-                $sql = "SELECT * FROM khachhang";
+                $sql = "SELECT * FROM cuahang";
                 $result = mysqli_query($conn, $sql);
                 
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                         <tr>
-                            <th scope="row"><?php echo $row['ma_kh']; ?></th>
-                            <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['email']; ?></td>
+                            <th scope="row"><?php echo $row['ma_ch']; ?></th>
+                            <td><?php echo $row['ten_ch']; ?></td>
                             <td><?php echo $row['address']; ?></td>
                             <td><?php echo $row['phone']; ?></td>
+                            <td><img style="width: 100px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
+                            <td><?php echo $row['giamgia']; ?>%</td>
                             <td>
-                                <a href="update-user.php?ma_sp=<?php echo $row['ma_kh']; ?>" class="btn btn-primary">Chỉnh sửa</a>
-                                <a href="delete-user.php?ma_sp=<?php echo $row['ma_kh']; ?>" class="btn btn-secondary">Thay đổi mật khẩu</a>
+                                <a href="update-store.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
+                                <a href="delete-store.php?ma_ch=<?php echo $row['ma_ch']; ?>" class="btn btn-danger btn-sm">Xóa</a>
                             </td>
                         </tr>
                 <?php

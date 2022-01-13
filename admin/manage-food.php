@@ -24,17 +24,19 @@
                     die("Kết nối thất bại. Vui lòng kiểm tra lại các thông tin máy chủ");
                 }
                 
-                $sql = "SELECT ma_sp, ten_sp, gia, giamgia FROM sanpham";
+                $sql = "SELECT * FROM sanpham";
                 $result = mysqli_query($conn, $sql);
                 
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
+
                 ?>
                         <tr>
                             <th scope="row"><?php echo $row['ma_sp']; ?></th>
                             <td><?php echo $row['ten_sp']; ?></td>
                             <td><?php echo $row['gia']; ?></td>
                             <td><?php echo $row['giamgia']; ?></td>
+                            <td><img class="img_cuahang" style="width: 200px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
                             <td><a href="update-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-pencil-square"></i></a></td>
                             <td><a href="delete-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-trash"></i></a></td>
                         </tr>
