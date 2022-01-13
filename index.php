@@ -153,23 +153,23 @@
                                 <ul class="product_list" style="list-style-type: none;">
                                     <?php
                                     require 'config/constants.php';
-                                    $sql_do_an = "SELECT * FROM cuahang";
-                                    $result_do_an = mysqli_query($conn, $sql_do_an);
-                                    while ($row_do_an = mysqli_fetch_assoc($result_do_an)) {
+                                    $sql_ch = "SELECT * FROM cuahang";
+                                    $result_ch = mysqli_query($conn, $sql_ch);
+                                    while ($row_ch = mysqli_fetch_assoc($result_ch)) {
                                     ?>
 
                                         <li class="rounded" style="margin-right: 10px; margin-bottom: 35px;height: 200px;width: 183px;background-color: white;">
-                                            <a href="<?php echo $row_do_an['menu_ch'] ?>" style="height:100%;text-decoration: none;">
-                                                <img class="img_cuahang" style="object-fit: cover;width: 200px;height: 150px;width:100%" src="<?php echo $row_do_an['img_ch'] ?>" alt="" />
+                                            <a href="food_detail2.php?ma_ch=<?php echo $row_ch['ma_ch'] ?>" style="height:100%;text-decoration: none;">
+                                                <img class="img_cuahang" style="object-fit: cover;width: 200px;height: 150px;width:100%" src="<?php echo $row_ch['img_ch'] ?>" alt="" />
                                                 <p class="title_product" style="font-size: medium; color: black; font-weight: bold;overflow-x: hidden;width:100%;height: 30px;overflow-y:hidden;margin-bottom: 0;">
-                                                    <?php echo $row_do_an['ten_ch'] ?>
+                                                    <?php echo $row_ch['ten_ch'] ?>
                                                 </p>
                                                 <p class="address_product" style="font-size: small; color: darkgray; font-weight: bold;overflow-x: hidden;width:100%;height: 20px;overflow-y:hidden;margin-bottom: 0;">
-                                                    <?php echo $row_do_an['address'] ?>
+                                                    <?php echo $row_ch['address'] ?>
                                                 </p>
                                                 <hr style="margin: 0;" />
                                                 <p class="promotion" style="font-size: medium;width:100%; color:red;margin-bottom: 0;">
-                                                    <i class="bi bi-tag-fill">Giảm giá <?php echo $row_do_an['giamgia'] ?>%</i>
+                                                    <i class="bi bi-tag-fill">Giảm giá <?php echo $row_ch['giamgia'] ?>%</i>
                                                 </p>
                                             </a>
                                         </li>

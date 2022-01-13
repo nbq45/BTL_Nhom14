@@ -1,3 +1,6 @@
+<?php
+  require 'config/constants.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,15 +76,16 @@
     <main>
         <div class="main_detail">
             <?php
-                require 'db.php';
-                $sql_do_an = "SELECT * FROM cuahang";
-                $result_do_an = mysqli_query($conn, $sql_do_an);
-                while ($row_do_an = mysqli_fetch_assoc($result_do_an)) {
+                if($_GET['ma_ch']){
+                    $id=$_GET['ma_ch'];
+                    $sql_ch = "SELECT * FROM cuahang Where ma_ch=".$_GET['ma_ch'];
+                    $result_ch = mysqli_query($conn, $sql_ch);
+                    $row_ch = mysqli_fetch_assoc($result_ch); 
             ?>
             <div class="container-md-5 row">
                 <div class="col-md-6">
                     <figure class="figure-img">
-                        <img src="<?php echo $row_do_an['img_ch'] ?>" width="480px" height="300" alt="<?php echo $row_do_an['ten_ch'] ?>">
+                        <img src="<?php echo $row_ch['img_ch'] ?>" width="480px" height="300">
                     </figure>
                 </div>
                 <div class="col-md-6">
@@ -89,12 +93,12 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
                             <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Hà Nội</a></li>
-                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><?php echo $row_do_an['ten_ch'] ?></a></li>
+                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><?php echo $row_ch['ten_ch'] ?></a></li>
                         </ol>
                     </nav>
                     <div class="detail_info">
-                        <h1 class="name_restaurant"><?php echo $row_do_an['ten_ch'] ?></h1>
-                        <h1 class="restaurant__local"><?php echo $row_do_an['address'] ?></h1>
+                        <h1 class="name_restaurant"><?php echo $row_ch['ten_ch'] ?></h1>
+                        <h1 class="restaurant__local"><?php echo $row_ch['address'] ?></h1>
                         <div class="rating">
                             <div class="stars">
                                 <span class="full"><i class="bi bi-star-fill" style="color: #ffc107;"></i></span>
@@ -137,6 +141,11 @@
                     </div>
                 </div>
             </div>
+            <?php
+                }else{
+                    echo "Không có cửa hàng";
+                }
+            ?>
         </div>
     </main>
     <div class="main-footer">
@@ -152,16 +161,11 @@
                                 <nav id="myScrollspy" class="col-sm-3 col-4">
                                     <div class="category-left">
                                         <ul class="nav nav-pills flex-column">
-                                            <?php
-                                                require 'db.php';
-                                                $sql_loai_san_pham = "SELECT * FROM loaisanpham";
-                                                $result_loai_san_pham  = mysqli_query($conn, $sql_loai_san_pham);
-                                                while ($row_loai_san_pham  = mysqli_fetch_assoc($result_loai_san_pham)) {
-                                            ?>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#section1">ƯU ĐÃI</a>
-                                                <a class="nav-link" href="#section2"><?php echo $row_loai_san_pham['ten_loaisp'] ?></a>
+                                                <a class="nav-link" href="#section1">Món đang giảm</a>
+                                                <a class="nav-link" href="#section2">Combo giảm giá</a>
                                             </li>
+                                        </ul>
                                     </div>
                                 </nav>
                                 <div class="col-sm-5 col-8">
@@ -169,15 +173,8 @@
                                         <div class="category-right">
                                             <ul class="nav nav-pills flex-column">
                                                 <li class="nav-item">
-                                                    <?php
-                                                        require 'db.php';
-                                                        $sql_loai_san_pham = "SELECT * FROM sanpham";
-                                                        $result_san_pham  = mysqli_query($conn, $sql_san_pham );
-                                                        while ($row_san_pham  = mysqli_fetch_assoc($result_san_pham)) {
-                                                    ?>
                                                     <div id="section1">
                                                         <div class="container promotions">
-                                                            <div class="col-md text-muted" style="font-size:large;">ƯU ĐÃI</div>
                                                             <div class="list-group list-group-flush">
                                                                 <div class="list-group-item">
                                                                     <img src="assets/img/voucher.jpg" width="40px" style="margin-right: 10px;" alt=""> Giảm 40K trên tổng đơn 100k
@@ -194,8 +191,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <?php
+                                                        $sql_san_pham = "SELECT ten_sp, img, gia FROM sanpham INNER JOIN cuahang ON sanpham.ma_ch=cuahang.ma_ch WHERE cuahang.ma_ch=$id";
+                                                        $result_san_pham  = mysqli_query($conn, $sql_san_pham );
+                                                        while($row_san_pham  = mysqli_fetch_assoc($result_san_pham)){
+                                                    ?>
                                                     <div id="section2">
-                                                        <div class="col-md text-muted" style="font-size:large;"><?php echo $row_loai_san_pham['ten_loaisp']?></div>
                                                         <div class="row product-item">
                                                             <div class="col-sm-auto">
                                                                 <a href=""><img src="<?php echo $row_san_pham['img']?>" width="60px" style="margin: 5px;"></a>
@@ -211,6 +212,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <?php
+                                                        }
+                                                    ?>
                                                 </li>
                                             </ul>
                                         </div>

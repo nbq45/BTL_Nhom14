@@ -99,7 +99,7 @@
           ?>
 
           <li class="rounded" style="margin-right: 1%;margin-left:1%; margin-bottom: 25px;height: 230px;width: 200px;background-color: white;">
-            <a href="<?php echo $row_do_an['menu_ch']?>"style="height:100%">
+            <a href="food_detail2.php?ma_ch=<?php echo $row_do_an['ma_ch'] ?>"style="height:100%">
               <img class="img_cuahang" style="object-fit: cover;width: 200px;height: 150px;width:100%" src="<?php echo $row_do_an['img_ch']?>" alt="" />
               <p class="title_product" style="font-size: medium; color: black; font-weight: bold;overflow-x: hidden;width:100%;height: 30px;overflow-y:hidden;margin-bottom: 0;">
                 <img src="assets/img/partner2x.jpg" style="height: 20px;width: 20px"><?php echo $row_do_an['ten_ch']?>
