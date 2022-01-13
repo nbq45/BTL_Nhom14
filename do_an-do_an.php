@@ -79,16 +79,51 @@
     </nav>
   </header>
   <div class="container" style="max-width: 1160px;">
-    <div class="filter_list" style="display: inline-flex;">
-      <select name="fetchval" id="fetchval">
-        <option value="" disabled="" selected="">Khu vực</option>
-        <option value="Caugiay">Cầu Giấy</option>
-        <option value="Dongda">Đống Đa</option>
-        <option value="Ngochoi">Ngọc Hồi</option>
-        <option value="Namtuliem">Nam Từ Liêm</option>
-      </select>
+    <div class="btn_list" style="display: inline-flex;">
+        <div class="dropdown">
+          <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Khu vực
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="checklist_khuvuc" >
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Đống Đa
+              </div>
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Hà Đông
+              </div>
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Hoàng Mai
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Phân loại
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="checklist_khuvuc">
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Đồ ăn
+              </div>
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Bánh kem
+              </div>
+              <div class="check_khuvuc">
+                <input type="checkbox" />
+                Đồ uống
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <hr/>
+    <hr>
     <div class="content">
       <form class="product" action="fetch.php" method="POST">
         <ul class="product_list" >

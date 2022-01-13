@@ -1,6 +1,6 @@
 <?php 
     //Include COnstants Page
-    include('../config/constants.php');
+    include('../config/constants-admin.php');
 
     //echo "Delete Food Page";
 

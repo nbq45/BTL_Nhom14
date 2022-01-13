@@ -37,8 +37,8 @@
                             <td><img class="img_cuahang" style="width: 200px;" src="<?php echo $row['img'] ?>" alt="" /></td>
                             <td><?php echo $row['gia']; ?>đ</td>
                             <td>
-                                <a href="update-food.php?ma_ch=<?php echo $row['ma_sp']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
-                                <a href="delete-food.php?ma_ch=<?php echo $row['ma_sp']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+                                <a href="update-food.php?ma_sp=<?php echo $row['ma_sp']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
+                                <a href="delete-food.php?ma_sp=<?php echo $row['ma_sp']; ?>" class="btn btn-danger btn-sm">Xóa</a>
                             </td>
                         </tr>
                 <?php

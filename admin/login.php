@@ -25,7 +25,7 @@
       }
     ?>
 
-    <form action="process-login.php" method="POST" class="position-absolute top-50 start-50 translate-middle ">
+    <form action="" method="POST" class="position-absolute top-50 start-50 translate-middle ">
       <h1>ADMIN - SIGN IN</h1>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -48,8 +48,6 @@
 </html>
 
 <?php
-session_start();
-require __DIR__.'/../config/constants.php';
 //CHeck whether the Submit Button is Clicked or NOt
 if (isset($_POST['submit'])) {
   //Process for Login
