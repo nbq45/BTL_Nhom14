@@ -1,3 +1,6 @@
+<?php
+  require 'config/constants.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +11,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/danhmuc.css">
-  <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false">
-  </script>
-  <script>
-    //Khoi tao Map
-    function initialize() {
-      //Khai bao cac thuoc tinh
-      var mapProp = {
-        //Tam ban do, quy dinh boi kinh do va vi do
-        center: new google.maps.LatLng(21.033693, 105.8466346),
-        //set default zoom cua ban do khi duoc load
-        zoom: 5,
-        //Dinh nghia type
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      //Truyen tham so cho cac thuoc tinh Map cho the div chua Map
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
   <title>Shopee Food</title>
 </head>
 
@@ -95,56 +79,20 @@
     </nav>
   </header>
   <div class="container" style="max-width: 1160px;">
-    <div class="btn_list" style="display: inline-flex;">
-      <div class="dropdown">
-        <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Khu vực
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <div class="checklist_khuvuc" >
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Đống Đa
-            </div>
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Hà Đông
-            </div>
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Hoàng Mai
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="btn btn-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Phân loại
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <div class="checklist_khuvuc">
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Đồ ăn
-            </div>
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Bánh kem
-            </div>
-            <div class="check_khuvuc">
-              <input type="checkbox" />
-              Đồ uống
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="filter_list" style="display: inline-flex;">
+      <select name="fetchval" id="fetchval">
+        <option value="" disabled="" selected="">Khu vực</option>
+        <option value="Caugiay">Cầu Giấy</option>
+        <option value="Dongda">Đống Đa</option>
+        <option value="Ngochoi">Ngọc Hồi</option>
+        <option value="Namtuliem">Nam Từ Liêm</option>
+      </select>
     </div>
     <hr/>
     <div class="content">
-      <div class="product" style="height: auto;">
+      <form class="product" action="fetch.php" method="POST">
         <ul class="product_list" >
           <?php
-            require 'config/constants.php';
             $sql_do_an="SELECT * FROM cuahang";
             $result_do_an=mysqli_query($conn,$sql_do_an);
             while($row_do_an=mysqli_fetch_assoc($result_do_an)){
@@ -171,7 +119,7 @@
           ?>
 
         </ul> 
-      </div>
+      </form>
       <div class="page_list">
         <ul class="page"style="display: inline-flex;">
           <li class="disable" style="padding: 20px">

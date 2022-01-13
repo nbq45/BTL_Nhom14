@@ -93,8 +93,8 @@
     </nav>
   </header>
   <form class="login" action="process-login.php" method="POST">
-    <div class="container" style="text-align: center;width: 600px;background-color: rgb(255, 255, 255);">
-      <div class="main-login" style="background-color: rgb(255, 255, 255);">
+    <div class="container" style="text-align: center;width: 600px;background-color: white;">
+      <div class="main-login" style="background-color:white;">
         <h4 class="title" style="color: black;">Sign up</h4>
         <div class="login-via">
           <div class="item phone" style="background-color: #329900">

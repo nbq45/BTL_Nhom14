@@ -158,7 +158,7 @@
                                     while ($row_do_an = mysqli_fetch_assoc($result_do_an)) {
                                     ?>
 
-                                        <li class="rounded" style="margin-right: 2%; margin-bottom: 25px;height: 200px;width: 183px;background-color: white;">
+                                        <li class="rounded" style="margin-right: 10px; margin-bottom: 35px;height: 200px;width: 183px;background-color: white;">
                                             <a href="<?php echo $row_do_an['menu_ch'] ?>" style="height:100%;text-decoration: none;">
                                                 <img class="img_cuahang" style="object-fit: cover;width: 200px;height: 150px;width:100%" src="<?php echo $row_do_an['img_ch'] ?>" alt="" />
                                                 <p class="title_product" style="font-size: medium; color: black; font-weight: bold;overflow-x: hidden;width:100%;height: 30px;overflow-y:hidden;margin-bottom: 0;">
@@ -172,7 +172,7 @@
                                                     <i class="bi bi-tag-fill">Giảm giá <?php echo $row_do_an['giamgia'] ?>%</i>
                                                 </p>
                                             </a>
-                                    </li>
+                                        </li>
                                     <?php
                                     }
                                     ?>
