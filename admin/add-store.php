@@ -55,7 +55,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Food" class="btn btn-secondary">
+                        <input type="submit" name="submit" value="Add Store" class="btn btn-secondary">
                     </td>
                 </tr>
 
@@ -110,13 +110,8 @@
                     $_SESSION['add'] = "<div class='error'>Failed to Add Food.</div>";
                     header('location:'.SITEURL.'admin/manage-store.php');
                 }
-
-                
             }
-
         ?>
-
-
     </div>
 </div>
 

@@ -16,7 +16,7 @@
 
         <form action="" method="POST" enctype="multipart/form-data">
         
-            <table class="tbl-30">
+            <table style="width: 50%">
 
                 <tr>
                     <td>Tên Sản Phẩm:  </td>
@@ -26,9 +26,107 @@
                 </tr>
 
                 <tr>
-                    <td>Tên Cửa Hàng:  </td>
+                    <td>Ảnh (URL): </td>
                     <td>
-                        <input type="text" name="ten_ch" placeholder="Điền vào tên cửa hàng">
+                        <input type="text" name="anh" placeholder="">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Loại: </td>
+                    <td>
+                        <select name="loai">
+
+                            <?php 
+                                //Create PHP Code to display categories from Database
+                                //1. CReate SQL to get all active categories from database
+                                $sql = "SELECT * FROM loaisanpham";
+                                
+                                //Executing qUery
+                                $res = mysqli_query($conn, $sql);
+
+                                //Count Rows to check whether we have categories or not
+                                $count = mysqli_num_rows($res);
+
+                                //IF count is greater than zero, we have categories else we donot have categories
+                                if($count>0)
+                                {
+                                    //WE have categories
+                                    while($row=mysqli_fetch_assoc($res))
+                                    {
+                                        //get the details of categories
+                                        $ma_loaisp = $row['ma_loaisp'];
+                                        $ten_loaisp = $row['ten_loaisp'];
+
+                                        ?>
+
+                                        <option value="<?php echo $ma_loaisp; ?>"><?php echo $ten_loaisp; ?></option>
+
+                                        <?php
+                                    }
+                                }
+                                else
+                                {
+                                    //WE do not have category
+                                    ?>
+                                    <option value="0">Không có cửa hàng</option>
+                                    <?php
+                                }
+                            
+
+                                //2. Display on Drpopdown
+                            ?>
+
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Cửa hàng: </td>
+                    <td>
+                        <select name="cuahang">
+
+                            <?php 
+                                //Create PHP Code to display categories from Database
+                                //1. CReate SQL to get all active categories from database
+                                $sql = "SELECT * FROM cuahang";
+                                
+                                //Executing qUery
+                                $res = mysqli_query($conn, $sql);
+
+                                //Count Rows to check whether we have categories or not
+                                $count = mysqli_num_rows($res);
+
+                                //IF count is greater than zero, we have categories else we donot have categories
+                                if($count>0)
+                                {
+                                    //WE have categories
+                                    while($row=mysqli_fetch_assoc($res))
+                                    {
+                                        //get the details of categories
+                                        $ma_ch = $row['ma_ch'];
+                                        $ten_ch = $row['ten_ch'];
+
+                                        ?>
+
+                                        <option value="<?php echo $ma_ch; ?>"><?php echo $ten_ch; ?></option>
+
+                                        <?php
+                                    }
+                                }
+                                else
+                                {
+                                    //WE do not have category
+                                    ?>
+                                    <option value="0">Không có cửa hàng</option>
+                                    <?php
+                                }
+                            
+
+                                //2. Display on Drpopdown
+                            ?>
+
+                        </select>
                     </td>
                 </tr>
 
@@ -39,12 +137,6 @@
                     </td>
                 </tr>
 
-                <tr>
-                    <td>Mức giảm giá: </td>
-                    <td>
-                        <input type="text" name="giamgia" placeholder="">
-                    </td>
-                </tr>
 
                 <tr>
                     <td colspan="2">
@@ -67,8 +159,11 @@
                 
                 //1. Get the DAta from Form
                 $ten_sp = $_POST['ten_sp'];
+                $img = $_POST['anh'];
+                $loai = $_POST['loai'];
+                $cuahang = $_POST['cuahang'];
                 $gia = $_POST['gia'];
-                $giamgia = $_POST['giamgia'];
+                
 
 
 
@@ -78,10 +173,11 @@
                 // For Numerical we do not need to pass value inside quotes '' But for string value it is compulsory to add quotes ''
                 $sql2 = "INSERT INTO sanpham SET 
                     ten_sp = '$ten_sp',
+                    img = '$img',
                     gia = '$gia',
-                    giamgia = '$giamgia'
+                    ma_loaisp = $loai,
+                    ma_ch = $cuahang
                 ";
-
                 //Execute the Query
                 $res2 = mysqli_query($conn, $sql2);
 
@@ -91,7 +187,12 @@
                 {
                     //Data inserted Successfullly
                     $_SESSION['add'] = "<div class='success'>Food Added Successfully.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php');
+                    if (headers_sent()) {
+                        die("Redirect failed. Please click on this link: <a href=...>");
+                    }
+                    else{
+                        exit(header('location:'.SITEURL.'admin/manage-store.php'));
+                    }
                 }
                 else
                 {
@@ -99,13 +200,8 @@
                     $_SESSION['add'] = "<div class='error'>Failed to Add Food.</div>";
                     header('location:'.SITEURL.'admin/manage-food.php');
                 }
-
-                
             }
-
         ?>
-
-
     </div>
 </div>
 

@@ -5,14 +5,14 @@
         <div>
             <a class="btn btn-primary" href="add-food.php">Thêm</a>
         </div>
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Mã sản phẩm</th>
+                    <th scope="col">STT</th>
                     <th scope="col">Tên sản phẩm</th>
-                    <th scope="col">Tên cửa hàng</th>
+                    <th scope="col">Ảnh</th>
                     <th scope="col">Giá</th>
-                    <th scope="col">Mức Giảm Giá</th>
+                    <th scope="col">Chỉnh sửa</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,11 +34,12 @@
                         <tr>
                             <th scope="row"><?php echo $row['ma_sp']; ?></th>
                             <td><?php echo $row['ten_sp']; ?></td>
-                            <td><?php echo $row['gia']; ?></td>
-                            <td><?php echo $row['giamgia']; ?></td>
-                            <td><img class="img_cuahang" style="width: 200px;" src="<?php echo $row['img_ch'] ?>" alt="" /></td>
-                            <td><a href="update-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-pencil-square"></i></a></td>
-                            <td><a href="delete-food.php?ma_sp=<?php echo $row['ma_sp']; ?>"><i class="bi bi-trash"></i></a></td>
+                            <td><img class="img_cuahang" style="width: 200px;" src="<?php echo $row['img'] ?>" alt="" /></td>
+                            <td><?php echo $row['gia']; ?>đ</td>
+                            <td>
+                                <a href="update-food.php?ma_ch=<?php echo $row['ma_sp']; ?>" class="btn btn-primary btn-sm">Chỉnh sửa</a>
+                                <a href="delete-food.php?ma_ch=<?php echo $row['ma_sp']; ?>" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
                         </tr>
                 <?php
                     }
