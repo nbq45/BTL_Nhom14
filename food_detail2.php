@@ -192,7 +192,7 @@
                                                         </div>
                                                     </div>
                                                     <?php
-                                                        $sql_san_pham = "SELECT ten_sp, img, gia FROM sanpham INNER JOIN cuahang ON sanpham.ma_ch=cuahang.ma_ch WHERE cuahang.ma_ch=$id";
+                                                        $sql_san_pham = "SELECT ma_sp, ten_sp, img, gia FROM sanpham INNER JOIN cuahang ON sanpham.ma_ch=cuahang.ma_ch WHERE cuahang.ma_ch=$id";
                                                         $result_san_pham  = mysqli_query($conn, $sql_san_pham );
                                                         while($row_san_pham  = mysqli_fetch_assoc($result_san_pham)){
                                                     ?>
@@ -208,7 +208,7 @@
                                                                 <h2 class="price text-right" style="color: #0288d1;"><span><?php echo $row_san_pham['gia']?></span><sup>đ</sup></h2>
                                                             </div>
                                                             <div class="col-sm-auto">
-                                                                <button id="BtnClick" type="button" class="btnAdding btn-primary bi bi-plus btn-sm"></button>
+                                                                <a href="<?php echo SITEURL; ?>process_order.php?ma_sp=<?php echo $row_san_pham['ma_sp']; ?>" class="btn btn-primary">Đặt món</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -248,9 +248,6 @@
                                             <div class="col">
                                                 <div class="user-name">Nguyễn Văn A</div>
                                             </div>
-                                            <div class="col-auto">
-                                                <span class="number-order">0 </span>món
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="order-card-groups">
@@ -270,6 +267,7 @@
                                         </div> -->
                                     </div>
                                 </div>
+                                
                                 <div class="bill-2" style="flex-grow: 1;max-width: 100%;background-color: #ebebeb;">
                                     <div class="row">
                                         <div class="col">Cộng</div>
@@ -289,7 +287,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#orderbill">
+                                <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" name="order_click1" data-bs-target="#orderbill">
                                     <i class="bi bi-check-circle-fill"></i> Đặt trước
                                 </button>
                                 <!-- The Modal -->
@@ -481,7 +479,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/food_add.js"></script>
+</body>
 </body>
 <!-- ban -->
 </html>
