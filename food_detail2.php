@@ -1,8 +1,6 @@
 <?php
   require ('template/header.php');
 ?>
-
-    
     <main>
         <div class="main_detail">
             <?php
@@ -175,9 +173,7 @@
                                             <div class="col-auto">
                                                 <div class="avatar"><img src="assets/img/image6.png" width="40px" alt=""></div>
                                             </div>
-                                            <div class="col">
-                                                <div class="user-name">Nguyễn Văn A</div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="order-card-groups">

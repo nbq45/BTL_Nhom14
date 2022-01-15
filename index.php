@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/fko7CWIlc9o4q8nqFetgP91cndXongixh1t6ZvkrJvrDStrqaC--WnZw_3e0FIYpug" type="image/x-icon">
     <title>Đặt đồ ăn trực tuyến Ở 16 tỉnh thành trên Toàn Quốc & Giao hàng tận nơi | Đặt món & giao ship tận nơi | shopeefood.vn</title>
 </head>
 
@@ -110,7 +111,7 @@
                             </div>
                         </div>
                         <div class="category-list col-md-7 gap-4">
-                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="all.php">All</button>
+                            <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="#">All</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2"><a style="color: aliceblue; text-decoration: none;" href="do_an-do_an.php">Đồ ăn</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2">Đồ uống</button>
                             <button type="button" class="btn btn-outline-light me-2 mt-2">Đồ chay</button>

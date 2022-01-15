@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/do_an-all.css">
     <link rel="stylesheet" href="assets/css/login-sign.css">
     <link rel="stylesheet" href="assets/css/food_detail.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/fko7CWIlc9o4q8nqFetgP91cndXongixh1t6ZvkrJvrDStrqaC--WnZw_3e0FIYpug" type="image/x-icon">
     <script src="http://maps.googleapis.com/maps/api/js?key=#{your_app_key}&sensor=false">
     </script>
     <script>
@@ -33,7 +34,7 @@
           }
           google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <title>Shopee Food</title>
+    <title>ShopeeFood</title>
 </head>
 <body>
 <header class="container-fluid">
@@ -85,9 +86,6 @@
                             <a class="nav-link" href="#">Thú Cưng</a>
                         </li>
                     </ul>
-                    <div class="header-icon-search">
-                        <i class="bi bi-search"></i>
-                    </div>
                     <?php 
                         if(isset($_SESSION['isLoginOk']))
                         {
@@ -99,7 +97,7 @@
                             echo '</div>';
                         }
                         else {
-                            echo '<button class="btn btn-outline-danger" type="submit"><a href ="login.php">Đăng Nhập</a></button>';
+                            echo '<button class="btn btn-outline-danger" type="submit"><a href ="login.php" style="color: coral; text-decoration: none;">Đăng Nhập</a></button>';
                         }
                     ?>
                 </div>
