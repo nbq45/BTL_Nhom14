@@ -5,10 +5,6 @@ if(isset($_POST['btnRegister']) && $_POST['email'])
     require 'config/constants.php';
     //thực hiện truy vấn
     $result = mysqli_query($conn,"SELECT * FROM khachhang WHERE email='" . $_POST['email'] . "'");
-<<<<<<< HEAD
-=======
-
->>>>>>> 825baa7ecf854e9304143b23c8b79d7367bd04de
     if(mysqli_num_rows($result) <= 0)//kiểm tra email chưa được dùng
     {
         //lưu lại thông tin đăng ký
@@ -22,11 +18,7 @@ if(isset($_POST['btnRegister']) && $_POST['email'])
         mysqli_query($conn, $sql);
         //sau khi lưu xong, cần gửi tới mail đăng ký 1 đg link tới website
         //yêu cầu người dùng nhấp để kích hoạt; biến link sẽ gửi vào email
-<<<<<<< HEAD
         $link = "<a href='http://localhost/BTL_NHOM14/verify-email.php?key=".$email."&token=".$token."'>Nhấp vào đây để kích hoạt</a>";
-=======
-        $link = "<a href='http://localhost/BTL_Nhom14/verify-email.php?key=".$email."&token=".$token."'>Nhấp vào đây để kích hoạt</a>";
->>>>>>> 825baa7ecf854e9304143b23c8b79d7367bd04de
         //quá trình gửi email
         include "send_mail.php";
         if(sendEmailForAccountActive($email,$link)){
