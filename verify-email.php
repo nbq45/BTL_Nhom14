@@ -76,7 +76,7 @@
     </header>
     <?php
     if ($_GET['key'] && $_GET['token']) {
-        require "db.php";
+        require 'config/constants.php';
         $email = $_GET['key'];
         $token = $_GET['token'];
         $sql =  "SELECT * FROM `khachhang` WHERE `email_verification_link`='$token' and `email`='$email'";
