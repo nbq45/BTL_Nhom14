@@ -68,9 +68,25 @@
                             <a class="nav-link" href="#">Thú Cưng</a>
                         </li>
                     </ul>
-                    <div class="btn">
+                    <?php 
+                        if(isset($_SESSION['isLoginOk']))
+                        {
+                            echo '<div>';
+                            echo "<a class='nav-link fw-bold'>Welcome: ".$_SESSION['isLoginOk']."</a>";
+                            echo '</div>';
+                            echo '<div>';
+                            echo "<a class='nav-link text-danger' href='logout.php'>Đăng xuất</a>";
+                            echo '</div>';
+                        }
+                        else {
+                            echo '<div class="btn">';
+                            echo '<button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>';
+                            echo '</div>';
+                        }
+                    ?>
+                    <!-- <div class="btn">
                         <button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>

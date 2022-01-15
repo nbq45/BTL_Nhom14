@@ -1,3 +1,6 @@
+<?php 
+    include('config/constants-admin.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,61 +36,73 @@
     <title>Shopee Food</title>
 </head>
 <body>
-    <header class="container-fluid">
+<header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid mt-1">
-              <a class="navbar-brand shopeef__logo ms-5 pe-5" href="#">
-                  <img src="assets/img/Shopeefood.jpg" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand shopeef__logo ms-5 pe-5" href="index.php">
+                    <img src="assets/img/Shopeefood.jpg" style="height: 30px;width: 153px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown pe-5 ">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown pe-5 ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Hà Nội
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="index.php">
-                          <span >Hà Nội</span>
-                          <span class="local text-muted">37811 địa điểm</span>
-                      </a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="index_hcm.php">
-                          <span >TP. HCM</span>
-                          <span class="local text-muted">78481 địa điểm</span>
-                      </a>
-                      </li>
-                  </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.php">Đồ Ăn</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Thực Phẩm</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Bia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Hoa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Siêu Thị</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Thuốc</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Thú Cưng</a>
-                  </li>
-                </ul>
-                <div class="header-icon-search">
-                  <i class="bi bi-search"></i>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Hà Nội</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">TP.HCM</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đằ Nẵng</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đồ Ăn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thực Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hoa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Siêu Thị</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thuốc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thú Cưng</a>
+                        </li>
+                    </ul>
+                    <div class="header-icon-search">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <?php 
+                        if(isset($_SESSION['isLoginOk']))
+                        {
+                            echo '<div>';
+                            echo "<a class='nav-link fw-bold'>Welcome: ".$_SESSION['isLoginOk']."</a>";
+                            echo '</div>';
+                            echo '<div>';
+                            echo "<a class='nav-link text-danger' href='logout.php'>Đăng xuất</a>";
+                            echo '</div>';
+                        }
+                        else {
+                            echo '<button class="btn btn-outline-danger" type="submit"><a href ="login.php">Đăng Nhập</a></button>';
+                        }
+                    ?>
                 </div>
-                <button class="btn btn-outline-danger" type="submit"><a style="color: coral; text-decoration: none;" href="login.php">Đăng Nhập</button>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
